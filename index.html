@@ -1,15 +1,113 @@
 <!DOCTYPE html>
-<html lang="en" data-ng-app="myApp">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>萝卜多招聘网</title>
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="//cdn.bootcss.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet">
-    <script src="style/public.css"></script>
+    <link href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/public.css">
+    <link rel="stylesheet" href="style/main.css">
 </head>
 <body>
+    <header  class="navbar-static-top">
+        <div class="header-panel">
+            <div class="container">
+                <div class="row">
+                    <nav class="navbar navbar-default nav-clear">
+                        <div class="col-xs-12 pd-0">
+                            <!--header左侧logo-->
+                            <div class="col-sm-5">
+                                <img src="images/logo.png" class="pull-left main-logo">
+                                <div class="main-location hidden-md hidden-sm hidden-xs">
+                                    <img src="images/location-logo.png">
+                                    <!--点击显示类似拉钩那样的模态框-->
+                                    <span class="selected-location">北京</span>
+                                </div>
+                                <div class="navbar-header pull-right">
+                                    <!--768px以下显示按钮-->
+                                    <button type="button" class="navbar-toggle dropdown-btn" data-toggle="collapse" data-target="#dropdown-list" >
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <!--右侧导航-->
+                            <div class="pull-right collapse navbar-collapse col-sm-6 nav-xs" id="dropdown-list" aria-expanded="true">
+                                <ul  class="nav navbar-nav navbar-right nav-media main-nav mg-0">
+                                    <li class="nav-page">首页
+                                        <span class="nav-page-underline"></span>
+                                    </li>
+                                    <li class="nav-page">
+                                        找职位<span class="nav-page-underline"></span>
+                                    </li>
+                                    <li class="nav-page">
+                                        找精英<span class="nav-page-underline"></span>
+                                    </li>
+                                    <li class="nav-page">关于我们
+                                        <span class="nav-page-underline"></span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
 
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <footer class="">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-left col-md-4 col-xs-12">
+                        <p class="footer-link">
+                            <a class="footer-link-a">关于我们</a>
+                        </p>
+                        <p class="font-14">萝卜多——知根知底的社群招聘</p>
+                    </div>
+                    <div class="footer-middle col-md-5 col-xs-12">
+                        <p class="footer-link">
+                            <a class="footer-link-a">联系我们</a>
+                        </p>
+                        <ul class="footer-right-ul">
+                            <li class="footer-right-line"><img src="../images/i-phone.jpg">
+                                <span class="footer-right-span">联系电话</span>
+                                <span>(010)59478634</span>
+                            </li>
+                            <li class="footer-right-line">
+                                <img src="../images/i-email.jpg">
+                                <span class="footer-right-span">邮箱支持</span>
+                                <span>kefu@ptteng.com</span>
+                            </li>
+                            <li class="footer-right-line">
+                                <img src="../images/i-address.png">
+                                <span class="footer-right-span">地&nbsp;址</span>
+                                <span>北京市海淀区翠微路甲10#225室</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-right col-md-3 col-xs-12 ">
+                        <img src="../images/erweima.jpg" class="footer-right-image">
+                        <p class="footer-right-text">微信号：葡萄藤IT技能树</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            Copyright © 2015 北京葡萄藤信息技术有限公司 All Rights Reserved | 京ICP备15035574号-3
+        </div>
+    </footer>
+
+    <script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="//cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdn.bootcss.com/angular.js/1.6.4/angular.min.js"></script>
+
+    <!--<script src="//cdn.bootcss.com/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>-->
+    <!--<script src="//cdn.bootcss.com/angular-ui-bootstrap/2.5.0/ui-bootstrap.min.js"></script>-->
 </body>
 </html>
