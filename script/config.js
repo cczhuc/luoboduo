@@ -5,7 +5,8 @@ var app = angular.module("carrots",[
     'oc.lazyLoad',
     'ngMessages',
     'tm.pagination',//个人用分页插件
-    'ui.bootstrap'
+    'ui.bootstrap',
+    'ngAnimate'
     // 'ngStorage',
     // 'ngCookies',
 ]);

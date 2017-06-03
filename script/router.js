@@ -62,11 +62,12 @@ function projectRouteConfig($stateProvider,$urlRouterProvider,$ocLazyLoadProvide
             templateUrl:"../view/findJob/findJob.html",
             controller: '',
             controllerAs: 'vm',
-            // resolve: {
-            //     loadMyFile: _lazyLoad([
-            //         ''
-            //     ])
-            // }
+            resolve: {
+                loadMyFile: _lazyLoad([
+                    '../style/my/findJob/findJob.css',
+                    'script/controller/findJobCtrl.js'
+                ])
+            }
         })
         //找精英
         .state("findElite",{

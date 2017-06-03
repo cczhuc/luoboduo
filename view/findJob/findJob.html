@@ -1,9 +1,66 @@
-<div>
-
-    找职位<br>
-    <a href="" ui-sref="jobList">找职位-推荐职位,最新职位搜索</a>
-    <a href="" ui-sref="search">找职位-搜索公司/搜索职业公共部分，顶边及侧边</a>
-    <a href="" ui-sref="companyInfo">找职位-公司详情和在招职位公共部分</a>
-    <a href="" ui-sref="jobDetails">找职位-职位详情</a>
+<div class="container" ng-controller="findJobCtrl">
+    <div class="row findJob">
+        <div class="searchJobNav">
+            <div class="firstNav">
+                <div class="menu-item">
+                    <p>
+                        <span class="menu-logo1"></span>
+                        用户体验
+                        <span class="iconfont arrow">&#xe688;</span>
+                    </p>
+                    <div >
+                        14px
+                    </div>
+                </div>
+                <div class="menu-details">
+                    用户体验
+                </div>
+            </div>
+            <div class="secondNav">
+                <div class="menu-item">
+                    <p>
+                        <span class="menu-logo2"></span>
+                        研发
+                        <span class="iconfont arrow">&#xe688;</span>
+                    </p>
+                    <div >
+                        14px
+                    </div>
+                </div>
+                <div class="menu-details">
+                    研发
+                </div>
+            </div>
+            <div class="thirdNav">
+                <div class="menu-item">
+                    <p>
+                        <span class="menu-logo3"></span>
+                        大数据
+                        <span class="iconfont arrow">&#xe688;</span>
+                    </p>
+                    <div >
+                        14px
+                    </div>
+                </div>
+                <div class="menu-details">
+                    大数据
+                </div>
+            </div>
+        </div>
+        <div class="jobBanner">
+            <form>
+                <div class="searchCompany">
+                    <span>公司名称</span>
+                    <input type="text" placeholder="输入公司名称">
+                    <button class="btn btn-danger">搜索</button>
+                </div>
+            </form>
+            <uib-carousel  class="bannerimg" active="active" interval="myInterval">
+                <div uib-slide ng-repeat="findJobBannerList in findJobBannerList track by $index">
+                    <img ng-src={{findJobBannerList.img}} href={{findJobBannerList.url}} >
+                </div>
+            </uib-carousel>
+        </div>
+    </div>
 
 </div>
