@@ -1,0 +1,139 @@
+body {
+    background: #f6f7f8;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+div.findJob {
+    position: relative;
+    height: 450px;
+    max-height: 450px;
+}
+div.searchJobNav {
+    width: 1000px;
+    height: 450px;
+}
+div.firstNav,
+div.secondNav,
+div.thirdNav {
+    height: 150px;
+}
+div.menu-item {
+    height: 150px;
+    padding: 10px;
+    width: 240px;
+    background: rgba(244,56,81,0.9);
+    color: #ffffff;
+}
+div.menu-item > p{
+    margin: 0;
+    line-height: 20px;
+    font-size: 18px;
+}
+span.menu-logo1,
+span.menu-logo2,
+span.menu-logo3 {
+    display: inline-block;
+    transform: translateY(3px);
+    margin: auto 10px;
+    width: 18px;
+    height: 18px;
+}
+span.menu-logo1 {
+    background: url("../../../images/findJob-searchNav-1w.png") no-repeat;
+}
+span.menu-logo2 {
+    background: url("../../../images/findJob-searchNav-2w.png") no-repeat;
+}
+span.menu-logo3 {
+    background: url("../../../images/findJob-searchNav-3w.png") no-repeat;
+}
+div.menu-item:hover span.menu-logo1{
+    background: url("../../../images/findJob-searchNav-1r.png") no-repeat;
+}
+div.menu-item:hover span.menu-logo2{
+    background: url("../../../images/findJob-searchNav-2r.png") no-repeat;
+}
+div.menu-item:hover span.menu-logo3{
+    background: url("../../../images/findJob-searchNav-3r.png") no-repeat;
+}
+span.arrow {
+    display: inline-block;
+    float: right;
+    margin-right: 20px;
+}
+div.menu-details {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 240px;
+    border: 1px solid #ff0000;
+    border-left: none;
+    width: 760px;
+    height: 450px;
+    background: #ffffff;
+    z-index: 10;
+}
+div.menu-item:hover + div.menu-details{
+    display: block;
+}
+div.menu-item:hover{
+    background: #ffffff;
+    color: rgba(244,56,81,0.9);
+    border-top: 1px solid rgba(244,56,81,0.9);
+    border-bottom: 1px solid rgba(244,56,81,0.9);
+}
+
+div.jobBanner {
+    position: absolute;
+    top: 0;
+    left: 240px;
+    height: 450px;
+    width: calc(100% - 240px);
+}
+div.jobBanner > form {
+    position: absolute;
+    left: 10%;
+    top: 35px;
+    margin: 0;
+    padding: 15px;
+    width: 80%;
+    height: 70px;
+    background: rgba(0,0,0,0.4);
+    border-radius: 10px;
+}
+div.searchCompany {
+    border-radius: 5px;
+    padding-left: 15px;
+    height: 35px;
+    background: #ffffff;
+}
+div.searchCompany span {
+    padding-right: 10px;
+    width: 70px;
+    font-size: 16px;
+    font-weight: bold;
+}
+div.searchCompany input {
+    padding: 0 0 0 10px;
+    border: none;
+    height: 35px;
+    width: calc(100% - 150px);
+    font-size: 16px;
+}
+div.searchCompany input:focus {
+    outline: none;
+    box-shadow: -1px 0 1px 0 #00ccff;
+}
+div.searchCompany button {
+    float: right;
+    height: 35px;
+    width: 70px;
+    border-radius: 0;
+}
+div.jobBanner div.bannerimg {
+    height: 450px;
+    width: 1000px;
+}
