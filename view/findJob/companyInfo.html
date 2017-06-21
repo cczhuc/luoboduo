@@ -1,8 +1,65 @@
-<div>
-    //找职位-公司详情和在招职位公共部分
-    <a href="" ui-sref="companyInfo.companyDetails">找职位-公司详情</a>
-    <a href="" ui-sref="companyInfo.hiringJob">找职位-在招职位</a>
-    <div ui-view="">
+<div class="container">
+    <div class="companyInfo">
+        <img ng-src="{{vm.companyInfo.company.logo}}" alt="公司logo" >
+        <div>
+            <p class="companyInfo-companyName">
+                <span>{{vm.companyInfo.company.name}}</span>
+                <span ng-if="vm.companyInfo.company.approved==1">
+                    <img src="images/companyInfo/companyInfo-approved.png" alt="">
+                    萝卜多认证
+                </span>
+            </p>
+            <p class="companyInfo-slogan">
+                <span>{{vm.companyInfo.company.slogan}}</span>
+            </p>
+            <p class="companyInfo-productName">
+                <span>{{vm.companyInfo.productList[0].name}}</span>
+            </p>
+        </div>
+    </div>
+    <div class="row companyDetail">
+        <div class="col-md-8 col-sm-12">
+            <div class="companyTitle">
+                <div class="companyTitle-company" ui-sref="myApp.companyInfo.companyDetails" ng-class={"companyActive":!vm.jduge} ng-click="vm.exchange0()">
+                    公司详情
+                </div>
+                <div class="companyTitle-hiringJob" ui-sref="myApp.companyInfo.hiringJob" ng-class={"companyActive":vm.jduge} ng-click="vm.exchange1()">
+                    在招职位
+                </div>
+            </div>
+            <div ui-view="">
 
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+            <div class="companyInfo-info">
+                <p class="companyInfo-infoTitle">
+                    <span>公司信息</span>
+                    <span></span>
+                </p>
+                <p>
+                    <img src="images/jobDetails/jobDetails-people.png" alt="">
+                    {{vm.companyInfo.company.totalNum}}
+                </p>
+                <p>
+                    <img src="images/jobDetails/jobDetails-industry.png" alt="">
+                    <span ng-repeat="industry in vm.companyInfo.industryList track by $index"> {{industry.industry|industryFilter}}</span>
+                    <span>/</span>
+                </p>
+                <p>
+                    <img src="images/jobDetails/jobDetails-request-1.png" alt="">
+                    {{vm.companyInfo.company.province|provinceFilter}}
+                </p>
+            </div>
+            <div class="companyInfo-tags">
+                <p  class="companyInfo-infoTitle">
+                    <span>公司标签</span>
+                    <span></span>
+                </p>
+                <p>
+                    <span ng-repeat="tag in vm.companyInfo.tagList track by $index"> {{tag.tag}}</span>
+                </p>
+            </div>
+        </div>
     </div>
 </div>

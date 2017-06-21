@@ -1,0 +1,112 @@
+.find-elite-banner>div{
+    width: 100%;
+    height: 400px;
+}
+.elite-type>div{
+    padding: 6% 25%;
+}
+.elite-type-font{
+    padding-top: 5%;
+}
+.find-elite-type-img2{
+    padding-left: 8%;
+}
+@media screen and (max-width: 991px){
+    .elite-type-font{
+        text-align: center ;
+        padding: 0 10%;
+    }
+    .elite-type>.row>div{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .find-elite-type-img2{
+        padding-left:0;
+    }
+}
+.elite-type-font>div{
+    font-weight: bold;
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+.elite-type-font>span{
+    display: block;
+    font-size: 16px;
+    color: rgb( 83, 106, 130 );
+}
+.elite-type-font>p{
+    font-size: 14px;
+    color: rgb( 83, 106, 130 );
+}
+
+
+.elite-service-title ,
+.elite-advantage-title{
+    text-align: center;
+    padding-top: 80px;
+    font-size: 24px;
+    padding-bottom: 3em;
+}
+.elite-service-title i{
+    font-style: normal;
+    padding-bottom: 4px;
+    border-bottom: 2px solid red;
+}
+.elite-advantage-title i{
+    font-style: normal;
+    padding-bottom: 4px;
+    border-bottom: 2px solid red;
+}
+
+.elite-service-content-icon>div{
+    margin: 0 auto;
+    width: 1px;
+    height: 3em;
+    border-left: 1px dashed red;
+}
+.elite-service-content-icon>i{
+    display: block;
+    text-align: center;
+    line-height: 10px;
+    color: red;
+}
+.elite-service-content-img+div{
+    padding: 15px 0;
+}
+@media screen and (max-width: 768px){
+    .elite-service-content{
+        text-align: center;
+    }
+}
+@media screen and (min-width: 992px){
+    .elite-service-content-img{
+        text-align: center;
+    }
+}
+.elite-advantage-content{
+    text-align: center;
+}
+.elite-advantage-content>div>p{
+    padding: 2em 0;
+    color: rgb( 45, 62, 80 );
+}
+
+.elite-success-img{
+    width: 18.75em;
+    height: 12.5em;
+    line-height: 12.5em;
+    margin: 1em auto;
+    overflow: hidden;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.elite-success-img:hover{
+    border-radius: 3px;
+    box-shadow: 0 0 10px 2px #ddd;
+}
+.elite-more-company{
+    padding: 15px 30px;
+    margin: 2em auto;
+}

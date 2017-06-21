@@ -6,12 +6,12 @@ app.factory("portService",function ($http,address) {
         },
 
         //默认搜索最新职位
-        getSearchJob: function (type) {
-            return $http.get(address.searchjob_url(type||0,{params:data}))
+        getSearchJob: function (type,data) {
+            return $http.get(address.searchJob_url(type||0),{params:data})
         },
         //默认不区分认证公司与非认证公司
-        getSearchCompany: function (type) {
-            return $http.get(address.searchCompany_url(type||"",{params:data}))
+        getSearchCompany: function (type,data) {
+            return $http.get(address.searchCompany_url(type||""),{params:data})
         },
         //职位详情
         getJobDetails: function (id) {

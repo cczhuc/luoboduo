@@ -1,3 +1,90 @@
-<div>
-    //找职位-职位详情
+<div class="container">
+    <div class="row jobDetails">
+        <div class="col-md-8 col-sm-12">
+            <div class="jobDetailsTitle">
+                <p class="jobsDetails-Name">{{vm.jobDetail.name}}</p>
+                <p class="jobsDetails-companyName">{{vm.jobDetail.companyName}}</p>
+                <p class="jobsDetails-request">
+                    <span>{{vm.jobDetail.compensation|compensationFilter}}</span>
+                    <img src="images/jobDetails/jobDetails-request-1.png" alt="">
+                    <span>{{vm.jobDetail.province|provinceFilter}}</span>
+                    <img src="images/jobDetails/jobDetails-request-2.png" alt="">
+                    <span>{{vm.jobDetail.education|educationFilter}}</span>
+                    <img src="images/jobDetails/jobDetails-request-3.png" alt="">
+                    <span>{{vm.jobDetail.experience|experienceFilter}}</span>
+                </p>
+                <p class="jobDetails-tag">
+                    <span ng-repeat="tag in vm.jobDetail.tags track by $index">{{tag.tag}}</span>
+                </p>
+                <p class="jobDetails-updateTime">
+                    <img src="images/jobDetails/jobDetails-updateTime.png" alt="">
+                    发布时间：{{vm.jobDetail.updateAt|date:'yyyy-MM-dd hh:mm'}}
+                </p>
+            </div>
+            <div class="jobDescription">
+                <p class="jobDescription-title">职位描述</p>
+                <p>岗位职责:</p>
+                <p>{{vm.jobDetail.responsibility}}</p>
+                <p>必备条件:</p>
+                <p>{{vm.jobDetail.requisite}}</p>
+                <p>公司福利:</p>
+                <p>{{vm.jobDetail.boon}}</p>
+            </div>
+            <!--分享-->
+            <div class="shareJob social-share">
+                <img src="images/jobDetails/jobDetails-shareJob-1.png" alt="">
+                <span>分享</span>
+                <!--<a href="" class="social-share-icon icon-wechat"></a>-->
+                <!--<a href="" class="social-share-icon icon-qq"></a>-->
+                <!--<a href="" class="social-share-icon icon-weibo"></a>-->
+                <button data-toggle="modal" data-target="#myModal2">我感兴趣</button>
+                <!--模态框-->
+                <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header modal-header1">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                    &times;
+                                </button>
+                                <p class="modal-title" id="myModalLabel">
+                                    我感兴趣
+                                </p>
+                            </div>
+                            <div class="modal-body modal-body1">
+                                <p>模式介绍：萝卜多先技术面试-再推荐给用人单位</p>
+                                <p>萝卜多是一个知根知底的社群招聘。萝卜多的合作企业和候选人，都是萝卜多精心筛选，认证，陪伴多年的伙伴。在萝卜多找工作快，工作有保障。值得您信任的招聘网站。</p>
+                                <p>您将感兴趣的职位、公司名称以及您的个人信息发送到我们的邮箱，我们会尽快帮您安排。</p>
+                                <p>邮箱地址：hr@ptteng.com</p>
+                            </div>
+                        </div><!-- /.modal-content -->
+                    </div><!-- /.modal -->
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+            <div class="companyLogo">
+                <img ng-src="{{vm.jobDetail.logo}}" alt="公司logo">
+                <p ui-sref="myApp.companyInfo.companyDetails({id:vm.jobDetail.companyId})">
+                    {{vm.jobDetail.companyName}}
+                    <img src="images/jobDetails/jobDetails-companyName.png" alt="">
+                </p>
+            </div>
+            <div class="companyBasicInfo">
+                <div>
+                    <p>
+                        <span>基本信息</span>
+                        <span></span>
+                    </p>
+                </div>
+                <p>
+                    <img src="images/jobDetails/jobDetails-people.png" alt="">
+                    {{vm.jobDetail.totalNum}}
+                </p>
+                <p>
+                    <img src="images/jobDetails/jobDetails-industry.png" alt="">
+                    <span ng-repeat="industry in vm.jobDetail.industryList track by $index"> {{industry.industry|industryFilter}}</span>
+                </p>
+            </div>
+        </div>
+    </div>
 </div>

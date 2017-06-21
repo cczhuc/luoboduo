@@ -1,3 +1,89 @@
-<div>
-    找职位-搜索职位页
+<div class="content">
+    <div class="row searchOptions">
+        <div class="searchOption">
+            <span>关&nbsp;&nbsp;键&nbsp;&nbsp;字:</span>
+            <input type="text" placeholder="请输入职位关键词" ng-model="vm.keyWord">
+        </div>
+        <div class="searchOption">
+            <span>所在地区:</span>
+            <a ng-repeat="a in vm.options.province track by $index" ng-class={"checked":a.choose} ng-click="vm.checkboxMulti($index,vm.options.province)">{{a.name}}</a>
+        </div>
+        <div class="searchOption">
+            <span>所属行业:</span>
+            <a ng-repeat="a in vm.options.industry track by $index" ng-class={"checked":a.choose} ng-click="vm.checkboxMulti($index,vm.options.industry)">{{a.name}}</a>
+        </div>
+        <div class="searchOption">
+            <span>学历要求:</span>
+            <a ng-repeat="a in vm.options.education track by $index" ng-class={"checked":a.choose} ng-click="vm.checkboxMulti($index,vm.options.education)">{{a.name}}</a>
+        </div>
+        <div class="searchOption">
+            <span>工作经验:</span>
+            <a ng-repeat="a in vm.options.experience track by $index" ng-class={"checked":a.choose} ng-click="vm.checkboxMulti($index,vm.options.experience)">{{a.name}}</a>
+        </div>
+        <div class="searchOption">
+            <span>薪资水平:</span>
+            <a ng-repeat="a in vm.options.compensation track by $index" ng-class={"checked":a.choose} ng-click="vm.checkboxMulti($index,vm.options.compensation)">{{a.name}}</a>
+        </div>
+        <div class="searchOption">
+            <span>发布时间:</span>
+            <a ng-repeat="a in vm.options.updateAt track by $index" ng-class={"checked":a.choose} ng-click="vm.radioType($index,vm.options.updateAt)">{{a.name}}</a>
+        </div>
+        <div class="searchJob">
+            <button id="btn1" ng-click="vm.empty()">清空</button>
+            <button id="btn2" ng-click="vm.search()">搜索</button>
+        </div>
+    </div>
+    <!--职位列表页-->
+    <div class="jobListContent">
+        <div class="row jobList" ng-repeat="jobList in vm.jobList track by $index" ui-sref="myApp.jobDetails({id:jobList.id})">
+            <div class="col-md-6 col-sm-12 jobsDetails">
+                <p>
+                    <span>{{jobList.name}}</span>
+                    <span>发布时间：{{jobList.updateAt|updateAtFilter}}</span>
+                </p>
+                <p>{{jobList.compensation|compensationFilter}}</p>
+                <p>
+                    <span>{{jobList.city|cityFilter}}</span>&nbsp;-&nbsp;
+                    <span>{{jobList.county|countyFilter}}</span>&nbsp;/&nbsp;
+                    <span>{{jobList.education|educationFilter}}</span>&nbsp;/&nbsp;
+                    <span>{{jobList.experience|experienceFilter}}</span>
+                </p>
+            </div>
+            <div class="col-md-6 col-sm-12 company-Detail">
+                <div class="col-xs-9">
+                    <p>{{jobList.companyName}}</p>
+                    <p>
+                        <span ng-repeat="industryType in jobList.industryList track by $index">{{industryType.industry|industryFilter}}</span>
+                        <i>&nbsp;</i>
+                    </p>
+                    <p>
+                        <span ng-repeat="tag in jobList.tags track by $index">{{tag.tag}}</span>
+
+                    </p>
+                </div>
+                <div class="col-xs-3">
+                    <img ng-src="{{jobList.logo}}" alt="公司logo">
+                </div>
+            </div>
+        </div>
+        <tm-pagination conf="vm.paginationConf">
+        </tm-pagination>
+    </div>
+    <div class=" no-items-recommendJob" ng-if="vm.paginationConf.showFlag">
+        <div class="title">
+            <p>推荐职位</p>
+        </div>
+        <div class="row recommendJobList">
+            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 " ng-repeat="recommendJob in vm.noJobRecommendJob track by $index"
+            ui-sref="myApp.jobDetails({id:recommendJob.id})">
+                <div>
+                    <img ng-src="{{recommendJob.logo}}" alt="公司logo">
+                    <p>{{recommendJob.compensation|compensationFilter}}</p>
+                    <p>{{recommendJob.name}}</p>
+                    <p>{{recommendJob.companyName}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>

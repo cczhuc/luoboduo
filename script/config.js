@@ -10,6 +10,12 @@ var app = angular.module("carrots",[
     // 'ngStorage',
     // 'ngCookies',
 ]);
+
+// Possibly unhandled rejection报错，引入该配置
+// app.config(['$qProvider', function ($qProvider) {
+//     $qProvider.errorOnUnhandledRejections(false);
+// }]);
+
 //将各个config写成函数，然后在此处调用。
 app.config(lazyLoadConfig)
     .config(provider)
@@ -33,7 +39,6 @@ function httpConfig($httpProvider) {
     $httpProvider.defaults.headers.patch['Content-Type'] = 'application/x-www-form-urlencoded;charset=utf-8';
     $httpProvider.defaults.headers.post['Content-Type'] = 'application/json;charset=utf-8';
     $httpProvider.defaults.headers.put['Content-Type'] = 'application/json;charset=utf-8';
-
     // 转换函数获取http请求体和请求头，并且返回他们的转换版（通常是序列化）。
     $httpProvider.defaults.transformRequest = function (data) {
         if (data === undefined) {

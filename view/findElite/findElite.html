@@ -1,4 +1,132 @@
-<div>
-    找精英<br>
-    <a href="" ui-sref="companyList">找精英-公司列表</a>
-</div>
+
+    <!--找精英banner-->
+    <div uib-carousel  class="find-elite-banner" active="active" interval="vm.myInterval">
+        <div uib-slide  ng-repeat="findEliteBanner in vm.findEliteBannerList track by $index" index="$index">
+            <a  ng-href="http://{{findEliteBanner.url}}" target="_blank">
+                <img ng-src="{{findEliteBanner.img}}">
+            </a>
+        </div>
+    </div>
+    <!--找精英优势介绍-->
+    <div class="container-fluid elite-type">
+        <div class="row">
+            <div class="col-md-6 col-xs-12  elite-type-font">
+                <div>0预付，无风险</div>
+                <span>入职付一半，转正付一半</span>
+                <p>普通猎头是三个月的薪水。非一般的我们只收一个月的薪水。如果试用期不通过，免费推荐另一个</p>
+            </div>
+            <div class="col-md-6 col-xs-12 "><img src="images/find-elite-type-1.png" alt=""></div>
+        </div>
+        <div class="row bg-grey">
+            <div class="col-md-6 col-xs-12"><img src="images/find-elite-type-2.png" alt="" class="find-elite-type-img2"></div>
+            <div class="col-md-6 col-xs-12 elite-type-font">
+                <div>专注于</div>
+                <span>最新最热门的IT互联网人才</span>
+                <p>
+                    萝卜多自己开发了一套强大的IT互联网人才库系统，有业界最新最活跃最有效的人才库，
+                    这里有最新最热门的IT互联网运营和技术人才，在各大互联网公司都有足够强的人脉圈。
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-xs-12 elite-type-font">
+                <div>优选人才，高效推荐</div>
+                <p>1-3天发送首个聘请通知</p>
+                <p>甄选职位 深度匹配 发送聘请通知 </p>
+                <p>平均一周内推荐成功 </p>
+            </div>
+            <div class="col-md-6 col-xs-12"><img src="images/find-elite-type-3.png" alt=""></div>
+        </div>
+    </div>
+    <!--找精英服务流程-->
+    <div class="container-fluid elite-service">
+        <div class="row bg-grey">
+            <p class="elite-service-title"><b>萝卜多<i>,服</i>务流程</b></p>
+            <div class="container elite-service-content">
+                <div class="col-md-4 col-xs-12 " >
+                    <div class="col-md-12 col-sm-2 col-xs-12 col-sm-offset-5 col-md-offset-0 elite-service-content-img">
+                        <img src="images/find-elite-service-1.png" alt="">
+                    </div>
+                    <div class="col-md-12 col-sm-4 col-xs-12">
+                        意向洽谈、深入评审、
+                        确认合作、签订合同、
+                        提出需求、提供jd、
+                        确立招聘标准
+                    </div>
+                </div>
+                <div class="hidden-md hidden-lg col-xs-12 elite-service-content-icon ">
+                    <div></div>
+                    <i class="fa fa-caret-down fa-2x" aria-hidden="true"></i>
+                    <i class="fa fa-caret-down fa-2x" aria-hidden="true"></i>
+                    <div></div>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                    <div class="col-md-12 col-sm-2 col-xs-12 col-sm-offset-5 col-md-offset-0 elite-service-content-img">
+                        <img src="images/find-elite-service-2.png" alt="">
+                    </div>
+                    <div class="col-md-12 col-sm-4 col-xs-12 col-sm-pull-6 col-md-pull-0">
+                        开始招聘、候选人评审、
+                        初步确立聘用意向、
+                        背景调查
+                    </div>
+                </div>
+                <div class="hidden-md hidden-lg elite-service-content-icon col-xs-12">
+                    <div></div>
+                    <i class="fa fa-caret-down fa-2x" aria-hidden="true"></i>
+                    <i class="fa fa-caret-down fa-2x" aria-hidden="true"></i>
+                    <div></div>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                    <div class=" col-md-12 col-sm-2 col-xs-12 col-sm-offset-5 col-md-offset-0 elite-service-content-img">
+                        <img src="images/find-elite-service-3.png" alt="">
+                    </div>
+                    <div class="col-md-12 col-sm-4 col-xs-12">
+                        发送聘请通知
+                        候选人上岗
+                        付款、转入售后服务
+                    </div>
+                </div>
+            </div>
+            <p style="padding: 3em"></p>
+        </div>
+    </div>
+    <!--我们的优势-->
+    <div class="container elite-advantage">
+        <div class="row">
+            <p class="elite-advantage-title"><b>我们<i>的</i>优势</b></p>
+            <div class="container elite-advantage-content">
+                <div class="col-md-6 col-lg-3 col-xs-12">
+                    <img src="images/find-elite-advantage-1.png" alt="">
+                    <p>30%的行业标准收费水平</p>
+                </div>
+                <div class="col-md-6 col-lg-3 col-xs-12">
+                    <img src="images/find-elite-advantage-2.png" alt="">
+                    <p>一半一半无风险的收费模式</p>
+                </div>
+                <div class="col-md-6 col-lg-3 col-xs-12">
+                    <img src="images/find-elite-advantage-3.png" alt="">
+                    <p>试用期内不满重推的推荐制度</p>
+                </div>
+                <div class="col-md-6 col-lg-3 col-xs-12">
+                    <img src="images/find-elite-advantage-4.png" alt="">
+                    <p>高价值高数量的人才储备机制</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--成功案例-->
+    <div class="container-fluid bg-grey">
+        <div class="container">
+            <div class="row">
+                <p class="elite-advantage-title"><b>成<i>功案</i>例</b></p>
+                <div class="col-lg-3 col-md-6 col-xs-12 text-center"  ng-repeat="x in vm.findEliteSuccessCase">
+                    <div class="elite-success-img">
+                        <img ui-sref="myApp.companyInfo.companyDetails({id:x.id})" ng-src="{{x.logo}}">
+                    </div>
+                </div>
+                <div class="col-md-12 text-center">
+                    <button type="button" ui-sref="myApp.companyList" class="btn btn-danger elite-more-company">更多合作公司</button>
+                </div>
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,72 @@
+div.companyInfo-hiringJob {
+     margin: 10px 0;
+     padding: 10px 15px ;
+     border-right: 3px solid #f4f4f4;
+ }
+div.companyInfo-hiringJob > p{
+    border-left: 5px solid #fc2a48;
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #a5afba;
+    margin-bottom: 20px;
+}
+/*div.hiringJob-search {*/
+    /*border: 1px solid #e8e8e8;*/
+    /*margin-top: 15px;*/
+    /*padding-top: 10px;*/
+    /*padding-left: 10px;*/
+/*}*/
+div.hiringJob-jobDetails {
+    min-height: 70px;
+    line-height: 70px;
+    margin: 10px 0;
+    padding-left: 30px;
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+    cursor: pointer;
+}
+div.hiringJob-jobDetails:hover {
+    background: #f6f7f8;
+}
+div.hiringJob-jobDetails > span {
+    text-align: left;
+    display: inline-block;
+    font-size: 14px;
+}
+div.hiringJob-jobDetails > span:nth-of-type(1) {
+    width: 30%;
+    font-size: 16px;
+    font-weight: bold;
+}
+div.hiringJob-jobDetails > span:nth-of-type(2) {
+    width: 20%;
+    color: #fc2b47;
+}
+div.hiringJob-jobDetails > span:nth-of-type(3) {
+    width: 25%;
+    color: #536a82;
+}
+div.hiringJob-jobDetails > span:nth-of-type(4) {
+    width: calc(25% - 30px);
+    text-align: center;
+    color: #999999;
+}
+@media only screen and (max-width: 750px) {
+    div.companyInfo-hiringJob > div.hiringJob-jobDetails > span {
+        width: calc(50% - 30px);
+        /*overflow-x: hidden;*/
+        /*text-overflow: ellipsis;*/
+        /*white-space:nowrap;*/
+    }
+    div.hiringJob-jobDetails > span:nth-of-type(4),
+    div.hiringJob-jobDetails > span:nth-of-type(2) {
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 500px) {
+    div.companyInfo-hiringJob > div.hiringJob-jobDetails > span {
+        width: calc(100% - 30px);
+        text-align: center;
+    }
+}

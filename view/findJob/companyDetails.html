@@ -1,3 +1,21 @@
-<div>
-    //找职位-公司详情
+<div class="row companyDetails-company">
+    <div class="companyProduct">
+        <p class="companyDetails-title">公司产品</p>
+        <img src="{{vm.companyInfo.productList[0].logo}}" alt="">
+        <div>
+            <p class="companyDetails-productName">
+                {{vm.companyInfo.productList[0].name}}
+            </p>
+            <p class="companyDetails-productSummary">
+                {{vm.companyInfo.productList[0].summary}}
+            </p>
+            <p class="companyDetails-productSlogan">
+                {{vm.companyInfo.productList[0].slogan}}
+            </p>
+        </div>
+    </div>
+    <div class="companyIntroduce">
+        <p class="companyDetails-title">公司介绍</p>
+        <p>{{vm.companyInfo.company.summary}}</p>
+    </div>
 </div>

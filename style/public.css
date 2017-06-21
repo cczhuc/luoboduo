@@ -1,5 +1,75 @@
+html{
+    font-family: "Microsoft YaHei";
+}
+body{
+    font-family: "Microsoft YaHei";
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/*阿里图标symbol通用,缺少会图标异常*/
+.icon {
+    /* 通过设置 font-size 来改变图标大小 */
+    width: 1em; height: 1em;
+    /* 图标和文字相邻时，垂直对齐 */
+    vertical-align: -0.15em;
+    /* 通过设置 color 来改变 SVG 的颜色/fill */
+    fill: currentColor;
+    /* path 和 stroke 溢出 viewBox 部分在 IE 下会显示
+       normalize.css 中也包含这行 */
+    overflow: hidden;
+}
+
 .nav-clear {
     background: 0;
     border: 0;
     margin: 0;
+}
+
+/*背景颜色*/
+.bg-f7 {
+    background-color: #f7f7f7
+}
+
+.bg-fff {
+    background-color: #fff
+}
+
+.bg-grey {
+    background-color: #f6f7f8
+}
+
+.bg-fa {
+    background-color: #fafafa
+}
+.bg-red{
+    background-color: red;
+}
+/*居中*/
+.t-left{
+    text-align: left;!important;
+}
+.t-center{
+    text-align: center;
+}
+.t-right{
+    text-align: right;
+}
+
+/*字体*/
+.font-14{
+    font-size: 14px;
+}
+.font-12{
+    font-size: 12px;
+}
+.color-gray{
+    color: gray;
 }

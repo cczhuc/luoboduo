@@ -1,0 +1,122 @@
+<!--头部-->
+<header  class="navbar-static-top">
+    <div class="header-panel">
+        <div class="container">
+            <div class="row">
+                <nav class="navbar navbar-default nav-clear">
+                    <div class="col-xs-12 pd-0">
+                        <!--header左侧logo-->
+                        <div class="col-sm-5">
+                            <img src="images/logo.png" class="pull-left main-logo" ui-sref="myApp.home">
+                            <div class="main-location hidden-md hidden-sm hidden-xs">
+                                <img src="images/location-logo.png">
+                                <!--点击显示类似拉钩那样的模态框-->
+                                <span class="selected-location">
+                                    <span>北京</span>
+                                    <span class="font-12 color-gray" style="cursor: pointer" data-toggle="modal" data-target="#myModal">[更多城市]</span>
+                                </span>
+                            </div>
+                            <!--更多城市模态框-->
+                            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                    aria-hidden="true">×
+                                            </button>
+                                            <h4 class="modal-title">切换城市</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <span class="modal-title" id="myModalLabel">点击进入</span>
+                                            <button type="button" class="btn btn-primary" ui-sref="myApp.about" data-dismiss="modal">北京站</button>
+                                            <span>or 切换到以下城市</span>
+                                        </div>
+                                        <div class="modal-header">
+                                            <button type="button" class="btn btn-default disabled">全国站</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>更多城市正在开通中,敬请期待</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="navbar-header pull-right">
+                                <!--768px以下显示按钮-->
+                                <button type="button" style="background-color: red" class="navbar-toggle dropdown-btn" data-toggle="collapse" data-target="#dropdown-list" >
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            <!--<div style="clear: both"></div>-->
+                        </div>
+                        <!--右侧导航-->
+                        <div class="pull-right collapse navbar-collapse col-sm-6 nav-xs" id="dropdown-list" aria-expanded="true">
+                            <ul  class="nav navbar-nav navbar-right nav-media main-nav mg-0">
+                                <li class="nav-page" ui-sref="myApp.home"   ng-class="{navChoice: $state.includes('myApp.home')}">首页
+                                    <span class="nav-page-underline"></span>
+                                </li>
+                                <li class="nav-page" ui-sref="myApp.findJob"  ng-class="{navChoice: $state.includes('myApp.findJob')||$state.includes('myApp.jobList')
+                                        ||$state.includes('myApp.search')||$state.includes('myApp.searchCompany')||
+                                        $state.includes('myApp.jobDetails')||$state.includes('myApp.notFind')}">
+                                    找职位<span class="nav-page-underline"></span>
+                                </li>
+                                <li class="nav-page" ui-sref="myApp.findElite" ng-class="{navChoice: $state.includes('myApp.findElite')||$state.includes('myApp.companyList')}">
+                                    找精英<span class="nav-page-underline"></span>
+                                </li>
+                                <li class="nav-page" ui-sref="myApp.about"  ng-class="{navChoice: $state.includes('myApp.about')}">关于我们
+                                    <span class="nav-page-underline"></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<div data-ui-view=""></div>
+<!--尾部-->
+<footer class="">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="footer-left col-md-4 col-xs-12">
+                    <p class="footer-link">
+                        <a class="footer-link-a"  ui-sref="myApp.about({status:'true'})">关于我们</a>
+                    </p>
+                    <p>萝卜多——知根知底的社群招聘</p>
+                </div>
+                <div class="footer-middle col-md-5 col-xs-12">
+                    <p class="footer-link">
+                        <a class="footer-link-a"  ui-sref="myApp.about({status:'false'})">联系我们</a>
+                    </p>
+                    <ul class="footer-right-ul">
+                        <li class="footer-right-line"><img src="images/i-phone.jpg">
+                            <span class="footer-right-span">联系电话</span>
+                            <span>(010)59478634</span>
+                        </li>
+                        <li class="footer-right-line">
+                            <img src="images/i-email.jpg">
+                            <span class="footer-right-span">邮箱支持</span>
+                            <span>kefu@ptteng.com</span>
+                        </li>
+                        <li class="footer-right-line">
+                            <img src="images/i-address.png">
+                            <span class="footer-right-span">地&nbsp;址</span>
+                            <span>北京市海淀区翠微路甲10#225室</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-right col-md-3 col-xs-12 ">
+                    <img src="images/erweima.jpg" class="footer-right-image">
+                    <p class="footer-right-text">微信号：葡萄藤IT技能树</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        Copyright © 2015 北京葡萄藤信息技术有限公司 All Rights Reserved | 京ICP备15035574号-3
+    </div>
+</footer>

@@ -1,0 +1,39 @@
+<div class="page-list">
+    <!--<div class="page-total" ng-show="conf.totalItems > 0">-->
+        <!--每页显示-->
+        <!--<input ng-model="conf.itemsPerPage" ng-change="changePerPage()"/>-->
+        <!--条-->
+    <!--</div>-->
+    <ul class="pagination" ng-show="conf.totalItems > 0">
+        <li ng-class="{disabled: conf.currentPage == 1}" ng-click="firstPage()">
+            <span>首页</span>
+        </li>
+        <li ng-class="{disabled: conf.currentPage == 1}" ng-click="prevPage()" ng-show="conf.currentPage !== 1">
+            <span><</span>
+        </li>
+        <li ng-repeat="item in pageList track by $index" ng-class="{active: item == conf.currentPage}" ng-click="changeCurrentPage(item)">
+        <span>{{item}}</span>
+        </li>
+        <li ng-class="{disabled: conf.currentPage == conf.numberOfPages}" ng-click="nextPage()" ng-show="conf.currentPage !== conf.numberOfPages">
+            <span>></span>
+        </li>
+        <li ng-class="{disabled: conf.currentPage == conf.numberOfPages}" ng-click="lastPage()">
+            <span>末页</span>
+        </li>
+    </ul>
+    <div class="page-total" ng-show="conf.totalItems > 0">
+        <!--共<strong>{{ conf.totalItems }}</strong>条-->
+        去第
+        <input type="text" ng-model="jumpPageNum" ng-change="changeInput()"/>
+        页
+        <a ng-click="jumpPage()">确定</a>
+    </div>
+    <div class="no-items" ng-show="conf.showFlag">
+        <div>
+            <img src="images/notFindItem.png" alt="">
+            <p>暂时没有符合该搜索条件的内容</p>
+            <p>请重新修改搜索条件后再次进行搜索</p>
+        </div>
+    </div>
+
+</div>

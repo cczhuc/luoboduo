@@ -1,3 +1,102 @@
-<div>
-    找精英-公司列表
+
+<div class="container comListContent">
+    <img src="images/companyList-banner.png" alt="">
+    <!--//搜索栏区域-->
+    <div class="row comListOptions">
+        <div class="searchOption">
+            <span>所在地区:</span>
+            <a ng-repeat="a in vm.options.province track by $index" ng-class={"checked":a.choose} ng-click="vm.checkboxMulti($index,vm.options.province)">{{a.name}}</a>
+        </div>
+        <div class="searchOption">
+            <span>所属行业:</span>
+            <a ng-repeat="a in vm.options.industry track by $index" ng-class={"checked":a.choose} ng-click="vm.checkboxMulti($index,vm.options.industry)">{{a.name}}</a>
+        </div>
+        <div class="searchOption">
+            <span>融资规模:</span>
+            <a ng-repeat="a in vm.options.financing track by $index" ng-class={"checked":a.choose} ng-click="vm.checkboxMulti($index,vm.options.financing)">{{a.name}}</a>
+        </div>
+        <div class="companyList-searchCompany">
+            <button id="btn1" ng-click="vm.empty()">清空</button>
+            <button id="btn2" ng-click="vm.search()">搜索</button>
+        </div>
+    </div>
+    <!--公司列表-->
+    <div class="companyListContent">
+        <div class="row companyList">
+            <div class="col-md-4 col-sm-6 col-xs-12" ng-repeat="companyList in vm.companyList track by $index"
+                 ui-sref="companyInfo.companyDetails({id:companyList.id})">
+                <div class="col-xs-12 companyList-company1">
+                    <div class="companyList-companyLogo">
+                        <img ng-src="{{companyList.logo}}" alt="公司logo" width="110px" height="110px">
+                    </div>
+                    <div class="companyList-companyDetails">
+                        <p>{{companyList.name}}</p>
+                        <p>{{companyList.slogan}}</p>
+                        <p>
+                            <span>{{companyList.professionNum}}</span>
+                            个在招职位
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xs-12 companyList-company2">
+                    <div class="col-xs-4">
+                        <img src="images/searchCompany/searchCompany-01.png" alt="">
+                        <span ng-repeat="industry in companyList.industryList track by $index">{{industry|industryFilter}}
+                            <span>/</span>
+                        </span>
+                    </div>
+                    <div class="col-xs-4">
+                        <img src="images/searchCompany/searchCompany-02.png" alt="">
+                        <span>{{companyList.financing|financingFilter}}</span>
+                    </div>
+                    <div class="col-xs-4">
+                        <img src="images/searchCompany/searchCompany-03.png" alt="">
+                        <span>{{companyList.province|provinceFilter}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--分页指令-->
+        <tm-pagination conf="vm.paginationConf"></tm-pagination>
+    </div>
+    <!--3个推荐公司-->
+    <div class="no-items-recommendCompany" ng-if="vm.paginationConf.showFlag">
+        <div class="title">
+            <p>推荐公司</p>
+        </div>
+        <div class="row companyList">
+            <div class="col-md-4 col-sm-6 col-xs-12" ng-repeat="recommendedCompany in vm.recommendedCompany track by $index"
+                 ui-sref="companyInfo.companyDetails({id:recommendedCompany.id})">
+                <div class="col-xs-12 companyList-company1">
+                    <div class="companyList-companyLogo">
+                        <img ng-src="{{recommendedCompany.logo}}" alt="公司logo" width="110px" height="110px">
+                    </div>
+                    <div class="companyList-companyDetails">
+                        <p>{{recommendedCompany.name}}</p>
+                        <p>{{recommendedCompany.slogan}}</p>
+                        <p>
+                            <span>{{recommendedCompany.professionNum}}</span>
+                            个在招职位
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xs-12 companyList-company2">
+                    <div class="col-xs-4">
+                        <img src="images/searchCompany/searchCompany-01.png" alt="">
+                        <span ng-repeat="industry in recommendedCompany.industryList track by $index">{{industry|industryFilter}}
+                            <span>/</span>
+                        </span>
+                    </div>
+                    <div class="col-xs-4">
+                        <img src="images/searchCompany/searchCompany-02.png" alt="">
+                        <span>{{recommendedCompany.financing|financingFilter}}</span>
+                    </div>
+                    <div class="col-xs-4">
+                        <img src="images/searchCompany/searchCompany-03.png" alt="">
+                        <span>{{recommendedCompany.province|provinceFilter}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

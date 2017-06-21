@@ -1,0 +1,193 @@
+div.jobDetails {
+    padding: 30px 15px;
+    margin: 15px -15px;
+    background: #ffffff;
+}
+div.jobDetailsTitle {
+    color: #536a82;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f6f7f8;
+    border-right: 3px solid #f4f4f4;
+}
+div.jobDetailsTitle > p {
+    margin: 15px 0;
+}
+div.jobDetailsTitle > p img{
+    transform: translateY(-2px);
+    padding-right: 4px;
+}
+p.jobsDetails-Name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #2d3e50;
+}
+p.jobsDetails-companyName {
+    font-size: 12px;
+}
+p.jobsDetails-request span{
+    display: inline-block;
+    font-size: 14px;
+    color: #536a82;
+    margin-right: 15px;
+}
+
+p.jobsDetails-request span:nth-of-type(1){
+    color: #fc2a48;
+}
+
+p.jobDetails-tag span {
+    display: inline-block;
+    border-radius: 10px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #d9d9d9;
+    min-width: 70px;
+    height: 22px;
+    line-height: 22px;
+    font-size: 12px;
+    color: #536a82;
+    text-align: center;
+}
+p.jobDetails-updateTime {
+    font-size: 12px;
+    color: #9f9f9f;
+}
+div.jobDescription {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    border-right: 3px solid #f4f4f4;
+}
+div.jobDescription p {
+    font-size: 14px;
+    color: #536a82;
+    margin: 30px 0;
+}
+div.jobDescription p.jobDescription-title {
+    border-left: 5px solid #fc2b47;
+    padding-left: 10px;
+    font-size: 16px;
+    color: #000000;
+}
+/*//分享部分*/
+div.shareJob {
+    padding: 40px 0 10px;
+    border-top: 1px solid #f6f7f8;
+    height: 91px;
+    line-height: 40px;
+}
+div.shareJob > img{
+    padding-right: 4px;
+}
+div.shareJob > a {
+    float: none;
+    margin: 0 0 0 10px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    cursor: pointer;
+}
+div.shareJob > button {
+    float: right;
+    width: 130px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background: #fc2b47;
+    color: #ffffff;
+    outline: none;
+}
+/*模态框部分*/
+div.modal-header1 {
+    background: #fc2b47;
+}
+div.modal-header1 button {
+    color: #ffffff;
+    opacity: 1;
+}
+div.modal-header1 p {
+    text-align: center;
+    color: #ffffff;
+
+}
+div.modal-body1 > p {
+    padding: 5px 10%;
+    margin: 10px 0;
+    font-size: 14px;
+    line-height: normal;
+    font-weight: normal;
+    color: #666666;
+}
+div.modal-body1 > p:nth-of-type(1) {
+    font-size: 16px;
+    color: #333333;
+}
+
+/*公司信息*/
+
+div.companyLogo {
+    text-align: center;
+}
+div.companyLogo > img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+div.companyLogo > p {
+    font-size: 14px;
+    font-weight: bold;
+    color: #000000;
+    cursor: pointer;
+}
+div.companyBasicInfo {
+    padding: 50px;
+    font-size: 14px;
+    color: #536a82;
+}
+div.companyBasicInfo > div > p {
+    font-weight: bold;
+
+}
+div.companyBasicInfo > div > p span:nth-of-type(1) {
+    padding-right: 15px;
+}
+div.companyBasicInfo > div > p span:nth-of-type(2) {
+    display: inline-block;
+    width: 70%;
+    height: 1px;
+    background: #e8e8e8;
+    transform:translateY(-4px)
+}
+div.companyBasicInfo > div > span {
+    font-weight: bold;
+}
+div.companyBasicInfo > p {
+    padding: 10px 0;
+}
+div.companyBasicInfo > p img {
+    padding-right: 10px;
+    width: 26px;
+}
+@media only screen and (max-width: 400px) {
+    div.shareJob > button {
+        width: 90px;
+    }
+    div.shareJob > img,
+    div.shareJob > span {
+        display: none;
+    }
+}
+@media only screen and (max-width: 997px) {
+    div.companyLogo {
+        padding-top: 50px;
+    }
+    div.companyBasicInfo {
+        padding: 50px 10px;
+
+    }
+    div.jobDetailsTitle,
+    div.jobDescription {
+        border-right: none;
+    }
+
+}

@@ -1,3 +1,17 @@
-<div>
-    找职位-在招职位
+<div class="row companyInfo-hiringJob">
+    <p>在招职位{{vm.paginationConf.totalItems}}个</p>
+    <!--<div class="hiringJob-search">-->
+        <!--<p>-->
+            <!--<span>职位类别</span>-->
+        <!--</p>-->
+    <!--</div>-->
+    <div class="hiringJob-jobDetails" ng-repeat="hiringJob in  vm.hiringJob track by $index"
+    ui-sref="myApp.jobDetails({id:hiringJob.id})">
+        <span>{{hiringJob.name}}[{{hiringJob.province|provinceFilter}}]</span>
+        <span>{{hiringJob.compensation|compensationFilter}}</span>
+        <span>{{hiringJob.experience|experienceFilter}}/{{hiringJob.education|educationFilter}}</span>
+        <span class="">{{hiringJob.updateAt|updateAtFilter}}</span>
+    </div>
+    <tm-pagination conf="vm.paginationConf">
+    </tm-pagination>
 </div>

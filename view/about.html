@@ -1,3 +1,68 @@
-<div>
-    关于我们
-</div>
+<div class="about-main">
+        <div class="container">
+            <div class="row">
+                <!--左侧栏-->
+                <div class="col-lg-2 col-md-2 col-xs-12 about-contact-content">
+                    <ul>
+                        <li ng-click="vm.toggle=true" ng-class="{clickAboutUs:vm.toggle, paddingLeft:!vm.toggle}">
+                            <span class="glyphicon glyphicon-user" ></span>
+                            <span>&nbsp;关于我们</span>
+                        </li>
+                        <li  ng-click="vm.toggle=false" ng-class="{unClickAboutUs:!vm.toggle, paddingLeft:vm.toggle}">
+                            <span class="glyphicon glyphicon-phone-alt"></span>
+                            <span>&nbsp;联系我们</span>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col-lg-9 col-md-9 col-xs-12 about-contact-intro" >
+                    <!--关于我们-->
+                    <ul ng-show="vm.toggle" >
+                        <li class="about-us-title">什么是萝卜多</li>
+                        <li class="about-us-content">萝卜多是针对创业公司以及独立人才寻找伙伴合作，提供多对多服务，以按需推荐的方式帮助创业团队以及人才解决、盲目寻找、
+                            茫然等待的问题。萝卜多不同于其他招聘网站。萝卜多的合作企业和候选人，都是萝卜多精心筛选，认证，陪伴多年的伙伴。
+                        </li>
+                        <li class="about-us-title">
+                            萝卜多团队介绍
+                        </li>
+                        <li class="about-us-content">
+                            成立于2014年，2015年3月开始运营，先后开启了IT修真院、草船云、萝卜多等三条项目主线，主打高质专业高效低价的理念，
+                            以卓越的技术实力和人才鉴别能力奠定基石，立足市场。
+                        </li>
+                        <li class="about-us-content">
+                            葡萄藤始终秉持促进中国企业创新与成长为愿景，凭借其团队丰富的行业经验和全球资源网络以及在业界的声誉，
+                            不遗余力地帮助创业家和他们的企业突破自我、不断创新、共创事业、共享成功！
+                        </li>
+                    </ul >
+                    <!--联系我们-->
+                    <ul ng-show="!vm.toggle">
+                        <li class="contact-us-company">北京葡萄藤信息技术有限公司</li>
+                        <li class="contact-us-detail">
+                            <span class="glyphicon glyphicon-map-marker"></span>
+                            <span>&nbsp;地址:</span>
+                            <span>北京市海淀区翠微路甲10院225室</span>
+                        </li>
+                        <li class="contact-us-detail">
+                            <span class="glyphicon glyphicon-phone-alt"></span>
+                            <span class="contact-us font-bold">&nbsp;电话：</span>
+                            <span>   (010)59478634</span>
+                        </li>
+                        <li class="contact-us-detail">
+                            <i class="fa fa-internet-explorer" aria-hidden="true"></i>
+                            <span class="contact-us font-bold">&nbsp;网址：</span>
+                            <span>www.luoboduo.com</span>
+                        </li>
+                        <li class="contact-us-detail">
+                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                            <span class="contact-us font-bold">&nbsp;邮箱：</span>
+                            <span>fuhua@ptteng.com</span>
+                        </li>
+                        <li class="contact-us-img">
+                            <img src="images/maps.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+

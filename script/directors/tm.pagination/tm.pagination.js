@@ -6,28 +6,7 @@
 angular.module('tm.pagination', []).directive('tmPagination',[function(){
     return {
         restrict: 'EA',
-        template:
-            '<div class="page-list">' +
-                '<div class="page-total" ng-show="conf.totalItems > 0">' +
-                    '每页显示<input ng-model="conf.itemsPerPage" ng-change="changePerPage()">条' +
-                '</div>' +
-                '<ul class="pagination" ng-show="conf.totalItems > 0">' +
-                '<li ng-class="{disabled: conf.currentPage == 1}" ng-click="firstPage()"><span>首页</span></li>' +
-                    '<li ng-class="{disabled: conf.currentPage == 1}" ng-click="prevPage()" ng-show="conf.currentPage !== 1"><span>&lsaquo;</span></li>' +
-                    '<li ng-repeat="item in pageList track by $index" ng-class="{active: item == conf.currentPage, separate: item == \'...\'}" ' +
-                    'ng-click="changeCurrentPage(item)">' +
-                        '<span>{{ item }}</span>' +
-                     '</li>' +
-                    '<li ng-class="{disabled: conf.currentPage == conf.numberOfPages}" ng-click="nextPage()" ng-show="conf.currentPage !== conf.numberOfPages"><span>&rsaquo;</span></li>' +
-                    '<li ng-class="{disabled: conf.currentPage == conf.numberOfPages}" ng-click="lastPage()"><span>末页</span></li>' +
-                '</ul>' +
-                '<div class="page-total" ng-show="conf.totalItems > 0">' +
-                     // '/共<strong>{{ conf.totalItems }}</strong>条 ' +
-                    '去第<input type="text" ng-model="jumpPageNum" ng-change="changeInput()"/>'+'页' +
-                    '<a ng-click="jumpPage()">确定</a>'+
-                '</div>' +
-            '<div class="no-items" ng-show="conf.showFlag">暂无数据</div>' +
-            '</div>',
+        templateUrl:'script/directors/tm.pagination/tm.pagination.html',
         replace: true,
         scope: {
             conf: '='
@@ -61,11 +40,6 @@ angular.module('tm.pagination', []).directive('tmPagination',[function(){
                 conf.pagesLength = defaultPagesLength
             }
 
-            // // // 分页选项可调整每页显示的条数,没用到这，把select框改为了文本框
-            // if(!conf.perPageOptions){//为空、数值0、null、NaN、undefined的话就执行下列语句
-            //     conf.perPageOptions = defaultPerPageOptions;
-            // }
-
             // pageList数组
             function getPagination(newValue, oldValue) {
                 // conf.currentPage
@@ -89,7 +63,7 @@ angular.module('tm.pagination', []).directive('tmPagination',[function(){
                     conf.totalItems = 0;
                     return;
                 }
-                
+
                 // conf.itemsPerPage ，//没用，已在list.js中定义
                 if(conf.itemsPerPage) {//为非零数值或者字符串的话ture
                     conf.itemsPerPage = parseInt(conf.itemsPerPage, 10);
@@ -106,24 +80,6 @@ angular.module('tm.pagination', []).directive('tmPagination',[function(){
                     scope.conf.currentPage = scope.conf.numberOfPages;
                 }
 
-                // // 如果itemsPerPage在不在perPageOptions数组中，就把itemsPerPage加入这个数组中
-                // var perPageOptionsLength = scope.conf.perPageOptions.length;//没有用了
-
-                // // 定义状态
-                // var perPageOptionsStatus;
-                // for(var i = 0; i < perPageOptionsLength; i++){
-                //     if(conf.perPageOptions[i] == conf.itemsPerPage){
-                //         perPageOptionsStatus = true;
-                //     }
-                // }
-                // // 如果itemsPerPage在不在perPageOptions数组中，就把itemsPerPage加入这个数组中
-                // if(!perPageOptionsStatus){//为空、数值0、null、NaN、undefined的话就执行下列语句
-                //     conf.perPageOptions.push(conf.itemsPerPage);
-                // }
-
-                // // 对选项进行sort
-                // conf.perPageOptions.sort(function(a, b) {return a - b});
-                
 
                 // 页码相关，
                 scope.pageList = [];

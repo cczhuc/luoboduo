@@ -1,65 +1,236 @@
-<div class="container" ng-controller="findJobCtrl">
+<div class="container">
     <div class="row findJob">
         <div class="searchJobNav">
             <div class="firstNav">
                 <div class="menu-item">
                     <p>
                         <span class="menu-logo1"></span>
-                        用户体验
+                        产品
                         <span class="iconfont arrow">&#xe688;</span>
                     </p>
                     <div >
-                        14px
+                        <a ng-repeat="item1 in vm.secondType.PM" ui-sref="myApp.search.searchJob({name:item1.name})">{{item1.name}}</a>
                     </div>
                 </div>
                 <div class="menu-details">
-                    用户体验
+                    <div>
+                        <span>产品经理</span>
+                        <a ng-repeat="item in vm.thirdType.PM.PM1" ui-sref="myApp.search.searchJob({name:item.name})">{{item.name}}</a>
+                    </div>
+                    <div>
+                        <span>高端职位</span>
+                        <a ng-repeat="item in vm.thirdType.PM.PM2" ui-sref="myApp.search.searchJob({name:item.name})">{{item.name}}</a>
+                    </div>
                 </div>
             </div>
             <div class="secondNav">
                 <div class="menu-item">
                     <p>
                         <span class="menu-logo2"></span>
-                        研发
+                        技术
                         <span class="iconfont arrow">&#xe688;</span>
                     </p>
                     <div >
-                        14px
+                        <a   ng-repeat="item2 in vm.secondType.research" ui-sref="myApp.search.searchJob({name:item2.name})">{{item2.name}}</a>
                     </div>
                 </div>
                 <div class="menu-details">
-                    研发
+                    <div>
+                        <span>前端</span>
+                        <a   ng-repeat="item in vm.thirdType.research.research1" ui-sref="myApp.search.searchJob({name:item.name})">{{item.name}}</a>
+                    </div>
+                    <div>
+                        <span>后端</span>
+                        <a   ng-repeat="item in vm.thirdType.research.research2" ui-sref="myApp.search.searchJob({name:item.name})">{{item.name}}</a>
+                    </div>
+                    <div>
+                        <span>移动</span>
+                        <a   ng-repeat="item in vm.thirdType.research.research3" ui-sref="myApp.search.searchJob({name:item.name})">{{item.name}}</a>
+                    </div>
+                    <div>
+                        <span>测试</span>
+                        <a   ng-repeat="item in vm.thirdType.research.research4" ui-sref="myApp.search.searchJob({name:item.name})">{{item.name}}</a>
+                    </div>
+                    <div>
+                        <span>运维</span>
+                        <a   ng-repeat="item in vm.thirdType.research.research5" ui-sref="search.searchJob({name:item.name})">{{item.name}}</a>
+                    </div>
+                    <div>
+                        <span>高端职位</span>
+                        <a   ng-repeat="item in vm.thirdType.research.research6" ui-sref="myApp.search.searchJob({name:item.name})">{{item.name}}</a>
+                    </div>
                 </div>
             </div>
             <div class="thirdNav">
                 <div class="menu-item">
                     <p>
                         <span class="menu-logo3"></span>
-                        大数据
+                        设计
                         <span class="iconfont arrow">&#xe688;</span>
                     </p>
                     <div >
-                        14px
+                        <a   ng-repeat="item3 in vm.secondType.UI" ui-sref="myApp.search.searchJob({name:item3.name})">{{item3.name}}</a>
                     </div>
                 </div>
                 <div class="menu-details">
-                    大数据
+                    <div>
+                        <span>视觉设计</span>
+                        <a   ng-repeat="item in vm.thirdType.UI.UI1" ui-sref="myApp.search.searchJob({name:item.name,category:item3.type})">{{item.name}}</a>
+                    </div>
+                    <div>
+                        <span>交互设计</span>
+                        <a    ng-repeat="item in vm.thirdType.UI.UI2" ui-sref="myApp.search.searchJob({name:item.name,category:item3.type})">{{item.name}}</a>
+                    </div>
+                    <div>
+                        <span>高端职位</span>
+                        <a   ng-repeat="item in vm.thirdType.UI.UI3" ui-sref="myApp.search.searchJob({name:item.name,category:item3.type})">{{item.name}}</a>
+                    </div>
                 </div>
             </div>
         </div>
+        <!--找职位banner-->
         <div class="jobBanner">
             <form>
                 <div class="searchCompany">
                     <span>公司名称</span>
-                    <input type="text" placeholder="输入公司名称">
-                    <button class="btn btn-danger">搜索</button>
+                    <input type="text" placeholder="输入公司名称" ng-model="vm.companyKeyWord">
+                    <button class="btn btn-danger" ui-sref="myApp.search.searchCompany({name:vm.companyKeyWord,judge:false})">搜索</button>
                 </div>
             </form>
-            <uib-carousel  class="bannerimg" active="active" interval="myInterval">
-                <div uib-slide ng-repeat="findJobBannerList in findJobBannerList track by $index">
-                    <img ng-src={{findJobBannerList.img}} href={{findJobBannerList.url}} >
+            <div uib-carousel  class="bannerimg" active="active" interval="vm.myInterval">
+                <div uib-slide  ng-repeat="findJobBanner in vm.findJobBannerList track by $index" index="$index">
+                    <a  ng-href="{{findJobBanner.url}}" target="_blank">
+                        <img ng-src="{{findJobBanner.img}}">
+                    </a>
                 </div>
-            </uib-carousel>
+            </div>
+        </div>
+    </div>
+    <!--推荐职位/最新职位-->
+    <div class="row recommendJobTtile" >
+        <div class="col-lg-12">
+            <span ng-class={"uncheck":vm.changeJob} ng-click="vm.exchange0()">推荐职位</span>
+            <span ng-class={"uncheck":!vm.changeJob} ng-click="vm.exchange1()">最新职位</span>
+            <span class="jobMore" ui-sref="myApp.jobList({judge:vm.changeJob})">查看更多></span>
+        </div>
+    </div>
+    <div class="row recommendJobList " >
+        <!--推荐职位-->
+        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 " ng-repeat="recommendJob in vm.findJobRecommendJob track by $index"
+        ng-if="!vm.changeJob" ui-sref="myApp.jobDetails({id:recommendJob.id})">
+            <div>
+                <img ng-src="{{recommendJob.logo}}" alt="公司logo">
+                <p>{{recommendJob.compensation|compensationFilter}}</p>
+                <p>{{recommendJob.name}}</p>
+                <p>{{recommendJob.companyName}}</p>
+            </div>
+        </div>
+        <!--最新职位-->
+        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 " ng-repeat="newJob in vm.findJobNewJob track by $index"
+        ng-if="vm.changeJob"  ui-sref="myApp.jobDetails({id:newJob.id})">
+            <div>
+                <img ng-src="{{newJob.logo}}" alt="公司logo">
+                <p>{{newJob.compensation|compensationFilter}}</p>
+                <p>{{newJob.name}}</p>
+                <p>{{newJob.companyName}}</p>
+            </div>
+        </div>
+    </div>
+    <!--推荐公司-->
+    <div class="row recommendCompanyTtile" >
+        <div class="col-lg-12">
+            <span>推荐公司</span>
+            <span class="companyMore" ui-sref="myApp.search.searchCompany({judge:false})">查看更多></span>
+        </div>
+    </div>
+    <div class="row recommendCompanyList " >
+        <div class="col-sm-4 col-xs-8 bigImg">
+            <div ui-sref="myApp.companyInfo.companyDetails({id:vm.findJobRecommendCompany.id})">
+                <p>{{vm.findJobRecommendCompany.name}}</p>
+                <p>{{vm.findJobRecommendCompany.slogan}}</p>
+                <span>
+                    <img src="images/finJob-recommendCompany-2.png" alt="" width="14" height="13">
+                    {{vm.findJobRecommendCompany.industryList[0]|industryFilter}}
+                </span>
+                <span>
+                    <img src="images/finJob-recommendCompany-3.png" alt="" width="15" height="13">
+                    {{vm.findJobRecommendCompany.financing|financingFilter}}
+                </span>
+                <span>
+                    <img src="images/finJob-recommendCompany-1.png" alt="" width="12" height="13">
+                    {{vm.findJobRecommendCompany.province|provinceFilter}}
+                </span>
+            </div>
+            <a  >
+                <img ng-src="{{vm.findJobRecommendCompany.logo}}" alt="大图">
+            </a>
+        </div>
+        <div class="col-sm-8 col-xs-12 ">
+            <div class="row">
+                <div class="col-sm-3 col-xs-4 smallImg" ng-repeat="normalCompany in vm.findJobNormalCompany track by $index"
+                     ui-sref="myApp.companyInfo.companyDetails({id:normalCompany.company.id})">
+                    <div>
+                        <a >
+                            <img ng-src="{{normalCompany.company.logo}}" alt="小图">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--推荐公司竖向banner图-->
+    <div uib-carousel class="row recommendCompanybanner"  active="active1" interval="3000">
+        <div  uib-slide class="companyBanner"  index="$index" ng-repeat="approvedCompany in vm.findJobApprovedCompany track by $index"
+              ui-sref="myApp.companyInfo.companyDetails({id:approvedCompany.company.id})">
+            <div class="companyDetails">
+                <div>
+                    <img ng-src="{{approvedCompany.company.logo}}" alt="gongsilogo">
+                </div>
+                <p>{{approvedCompany.company.name}}</p>
+                <p>{{approvedCompany.company.slogan}}</p>
+                <p>
+                    <span ng-repeat="industry in approvedCompany.industryList track by $index">{{industry.industry|industryFilter}}</span>
+                </p>
+            </div>
+            <div class="hiringJob">
+                <p>正在热招</p>
+                    <span ng-repeat="job in approvedCompany.hirring track by $index">{{job.name}}
+                        <span>|</span>
+                    </span>
+            </div>
+        </div>
+    </div>
+    <!--找职位下部写死部分-->
+    <div class="row findJobMore">
+        <div class="col-lg-3 col-md-3 col-sm-12 col-md-offset-3">
+            <img src="images/findJob-02.png" alt="" width="212" height="177">
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-12 ">
+            <p>无成本，零风险</p>
+            <p>无任何隐含费用全程免费</p>
+            <p>人才从投递到成功入职不需要任何费用，通过测试 后还可免费提供从业建议，不浪费每一分天赋。</p>
+        </div>
+    </div>
+    <div class="row findJobMore reverse">
+        <div class="col-lg-3 col-md-3 col-sm-12 col-md-offset-3 ">
+            <p>高效匹配，高度契合</p>
+            <p>1-3天发送首个聘请通知<br>
+                甄选职位 深度匹配 发送聘请通知<br>
+                <br>
+                3-5天安排候选人面试<br>
+                安排面试 协助客户快速入职<br>
+                <br>
+                平均一周内推荐成功<br>
+                多方洽谈 售后服务
+            </p>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-12 ">
+            <img src="images/findJob-03.png" alt="" width="267" height="260">
+        </div>
+    </div>
+    <div class="row findJobMore">
+        <div class="col-xs-12">
+            <img src="images/findJob-01.png" alt="" width="100%">
         </div>
     </div>
 

@@ -1,0 +1,170 @@
+
+div.content {
+    margin-bottom: 15px;
+}
+/*搜索栏部分*/
+div.searchOptions {
+    padding: 20px;
+    background: #ffffff;
+    margin: 0 0 20px;
+}
+div.searchOption {
+    padding: 10px 0;
+}
+div.searchOption input{
+    padding-left: 5px;
+    border: 1px solid #cccccc;
+    height: 40px;
+    width: 40%;
+}
+div.searchOption input::-webkit-input-placeholder {
+    color:#999999;
+}
+div.searchOption input:focus{
+    border-color: rgba(102,175,233,0.7);
+    outline: none;
+    box-shadow: 0 0 2px 1px rgba(102,175,233,0.4);
+}
+div.searchOption span{
+    font-size: 14px;
+    color: #000000;
+    font-weight: bolder;
+    padding-right: 15px;
+}
+div.searchOption a {
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    padding: 0 15px;
+    margin: 0 5px;
+    text-decoration: none;
+    color: #536a82;
+    cursor: pointer;
+}
+div.searchOption a.checked {
+    background: #fc2a48;
+    color: #ffffff;
+}
+div.companyList-searchCompany {
+    padding: 10px 0;
+    text-align: right;
+}
+div.companyList-searchCompany button{
+    margin: 0 10px;
+    padding: 0;
+    width: 60px;
+    height: 25px;
+    border: none;
+    font-size: 14px;
+    outline: none;
+}
+#btn1 {
+    background: #ffffff;
+    color: #000000;
+}
+#btn2 {
+    background: #fc2a48;
+    color: #ffffff;
+}
+/*公司列表部分*/
+div.companyList {
+    margin: 15px 0 0;
+    padding: 15px 0 30px;
+    background: #ffffff;
+}
+div.companyList > div.col-md-4 {
+    padding: 20px;
+
+}
+div.companyList > div.col-md-4:hover div.companyList-company1 {
+    box-shadow: 0 -1px 2px 1px rgba(233,233,233,0.8);
+    cursor: pointer
+}
+div.companyList > div.col-md-4:hover div.companyList-company2 {
+    box-shadow: 0 1px 2px 1px rgba(233,233,233,0.8);
+    cursor: pointer
+}
+div.companyList-company1 {
+    padding: 25px;
+    height: 160px;
+    border: 1px solid #d9d9d9;
+    border-bottom: none;
+}
+div.companyList-company2 {
+    padding: 0 15px ;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #d9d9d9;
+    border-top: none;
+    background: #fafafa;
+    text-align: center;
+}
+div.companyList-company2 div {
+    padding: 0;
+}
+div.companyList-companyLogo {
+    float: left;
+    width: 110px;
+    height: 110px;
+}
+div.companyList-companyLogo img {
+    border: 1px solid #d9d9d9;
+    width: 108px;
+    height: 108px;
+}
+div.companyList-companyDetails {
+    padding: 5px 0 5px 140px;
+}
+div.companyList-companyDetails p{
+    margin: 10px;
+}
+div.companyList-companyDetails span{
+    color: #fc2a48;
+}
+div.companyList-companyDetails p:nth-of-type(1){
+    font-size: 16px;
+    font-weight: bold;
+    color: #2d3e50;
+}
+div.companyList-companyDetails p:nth-of-type(2){
+    font-size: 14px;
+    color: #536a82;
+}
+div.companyList-companyDetails p:nth-of-type(3){
+    font-size: 14px;
+    color: #536a82;
+}
+div.companyListContent div.page-list {
+    padding-right: 20px;
+}
+div.companyList-company2 > div.col-xs-4 {
+    text-overflow: ellipsis;
+    overflow-x: hidden;
+    white-space: nowrap;
+}
+div.companyList-company2 span {
+    font-size: 12px;
+    color: #999999;
+}
+div.companyList-company2 img {
+    display: inline-block;
+    transform:translateY(-2px)
+}
+div.companyList-company2 > div > span:last-of-type > span {
+    display: none;
+}
+/*无数据时的推荐公司*/
+div.no-items-recommendCompany > div.title {
+    border-top: 1px solid #e8e8e8;
+    background: #ffffff;
+}
+div.no-items-recommendCompany > div.title > p {
+    margin: 0;
+    padding: 20px 15px 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+div.no-items-recommendCompany > div.companyList {
+    margin: 0;
+    padding-top: 0;
+}

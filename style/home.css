@@ -1,0 +1,185 @@
+.home-banner>div{
+    width: 100%;
+    height: 400px;
+}
+
+/*职位推荐*/
+.home-introduce {
+    padding: 74px 0;
+    background-color: white;
+}
+.introduce-tag{
+    margin-top: 45px;
+}
+.introduce-tag>span{
+    display: block;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #2d3e50;
+}
+.introduce-tag>p{
+    margin-top: 20px;
+    font-size: 14px;
+    color: #536a82;
+}
+.introduce-tag-data{
+    border-left: 1px solid #E5E9EB;
+}
+.introduce-tag-data>div{
+    margin-top: 30px;
+}
+.introduce-tag-data>div:first-child{
+    margin-top: 0;
+}
+.introduce-tag-data-num{
+    color: #fc2b47;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/*最新职位*/
+.home-new-job{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: #f6f7f8;
+}
+.home-new-job-more{
+    text-align: right;
+    padding: 10px 30px;
+    color: #536a82;
+    cursor: pointer;
+}
+.home-new-job-title{
+    text-align: center;
+    /*padding: 70px 0 30px 0;*/
+    color: #536a82;
+    font-size: 16px;
+}
+.home-new-job-title>span{
+    font-size: 20px;
+    margin-bottom: 0;
+    color: #2d3e50;
+    font-weight: bold;
+}
+.home-new-job-title>div{
+    height: 2px;
+    width: 30px;
+    background-color: #fc2b47;
+    margin: 4px auto;
+}
+.home-new-job-title>p{
+    padding: 0;
+}
+/*最新职位轮播*/
+.home-new-job-carousel{
+
+}
+.home-jobCarousel-item{
+    padding: 8%;
+    background-color: white;
+
+}
+.home-jobCarousel-itemImg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid #f6f7f8;
+    width: 100%;
+    height: 180px;
+    cursor: pointer;
+}
+/*轮播图改造*/
+.home-jobCarousel-setting>ol{
+    display: none;
+}
+
+.home-jobCarousel-setting>a{
+    width: 0;
+    background-image: none!important;
+}
+
+.home-jobCarousel-setting>a>.glyphicon-chevron-right {
+    margin-right: -60px !important;
+    color: red;
+    background-color: white;
+}
+.home-jobCarousel-setting>a>.glyphicon-chevron-left{
+    margin-left: -60px !important;
+    color: red;
+    background-color: white;
+}
+
+/*服务流程*/
+.home-service{
+    text-align: center;
+    padding: 80px 0;
+}
+.home-service-item{
+    margin: 1em 0;
+    overflow: hidden;
+    box-shadow: 0 0 1px 0;
+    border-radius: 5px;
+}
+.home-service-item>p{
+    margin: 10px 0;
+}
+.home-service-icon{
+    color: red;
+}
+@media screen and (min-width: 992px){
+    .home-service-icon{
+        margin-top: 73px;
+    }
+}
+/*伙伴之言*/
+
+/*轮播上一张，下一章样式*/
+.banner-pre, .banner-next {
+    position: absolute;
+    top: 47%;
+    z-index: 5;
+    display: inline-block;
+    margin-top: -10px;
+}
+.home-comment{
+    padding: 80px 0;
+}
+
+.home-friend {
+    text-align: center;
+    color: #999999;
+    background-color: rgb(255, 255, 255);
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #F0F0F0;
+    padding: 30px 17px 0 17px;
+    margin: 2px 0;
+    min-height: 338px;
+}
+.home-friend>img{
+    display: inline-block;
+}
+.home-friend:hover {
+    -moz-box-shadow: 1px 0 20px #DAE0E3;
+    -webkit-box-shadow: 1px 0 20px #DAE0E3;
+    box-shadow: 1px 0 20px #DAE0E3;
+}
+
+.home-friend-name {
+    color: #294154;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+.home-friend-introduce {
+    color: #666666;
+    font-size: 14px;
+    margin: 10px 0 20px 0;
+}
+@media screen and (max-width: 768px){
+    .friend-carousel-hide{
+        display: none;
+    }
+}

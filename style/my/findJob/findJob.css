@@ -1,18 +1,16 @@
 body {
-    background: #f6f7f8;
+    min-width: 300px;
 }
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+/*找职位-搜索导航*/
 div.findJob {
     position: relative;
-    height: 450px;
-    max-height: 450px;
 }
 div.searchJobNav {
-    width: 1000px;
     height: 450px;
 }
 div.firstNav,
@@ -22,16 +20,27 @@ div.thirdNav {
 }
 div.menu-item {
     height: 150px;
-    padding: 10px;
+    padding: 10px 0 10px 10px;
     width: 240px;
     background: rgba(244,56,81,0.9);
     color: #ffffff;
 }
-div.menu-item > p{
+div.menu-item > p {
     margin: 0;
     line-height: 20px;
     font-size: 18px;
 }
+div.menu-item > div {
+    margin: 10px 0;
+}
+div.menu-item > div > a {
+    display: inline-block;
+    margin: 6px 10px;
+    font-size: 14px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
 span.menu-logo1,
 span.menu-logo2,
 span.menu-logo3 {
@@ -50,13 +59,13 @@ span.menu-logo2 {
 span.menu-logo3 {
     background: url("../../../images/findJob-searchNav-3w.png") no-repeat;
 }
-div.menu-item:hover span.menu-logo1{
+div.firstNav:hover span.menu-logo1{
     background: url("../../../images/findJob-searchNav-1r.png") no-repeat;
 }
-div.menu-item:hover span.menu-logo2{
+div.secondNav:hover span.menu-logo2{
     background: url("../../../images/findJob-searchNav-2r.png") no-repeat;
 }
-div.menu-item:hover span.menu-logo3{
+div.thirdNav:hover span.menu-logo3{
     background: url("../../../images/findJob-searchNav-3r.png") no-repeat;
 }
 span.arrow {
@@ -69,23 +78,50 @@ div.menu-details {
     position: absolute;
     top: 0;
     left: 240px;
-    border: 1px solid #ff0000;
+    padding: 40px;
+    border: 1px solid rgba(244,56,81,0.9);
     border-left: none;
-    width: 760px;
+    width: 660px;
     height: 450px;
     background: #ffffff;
-    z-index: 10;
+    z-index: 200;
 }
-div.menu-item:hover + div.menu-details{
+div.menu-details > div {
+    margin: 20px 10px;
+}
+div.menu-details > div > span {
+    display: inline-block;
+    width: 64px;
+    margin: 10px;
+    color: rgba(244,56,81,0.9);
+    font-size: 16px;
+    text-align: right;
+}
+div.menu-details > div > a {
+    margin: 10px;
+    color: #536a82;
+    font-size: 14px;
+    text-decoration: none;
+}
+div.firstNav:hover > div.menu-details,
+div.secondNav:hover > div.menu-details,
+div.thirdNav:hover > div.menu-details {
     display: block;
 }
-div.menu-item:hover{
+div.firstNav:hover div.menu-item,
+div.secondNav:hover div.menu-item,
+div.thirdNav:hover div.menu-item {
     background: #ffffff;
     color: rgba(244,56,81,0.9);
     border-top: 1px solid rgba(244,56,81,0.9);
     border-bottom: 1px solid rgba(244,56,81,0.9);
 }
-
+div.firstNav:hover div.menu-item > div > a,
+div.secondNav:hover div.menu-item > div > a,
+div.thirdNav:hover div.menu-item > div > a {
+    color: rgba(244,56,81,0.9);
+}
+/*找职位-banner*/
 div.jobBanner {
     position: absolute;
     top: 0;
@@ -103,7 +139,21 @@ div.jobBanner > form {
     height: 70px;
     background: rgba(0,0,0,0.4);
     border-radius: 10px;
+    z-index: 100;
 }
+div.jobBanner div.bannerimg img{
+    width: 100%;
+    height: 450px;
+}
+div.jobBanner div.bannerimg >a >span {
+    background: rgba(255,255,255,0.5);
+}
+div.jobBanner div.bannerimg >ol >li {
+    height: 12px;
+    width: 12px;
+    margin: 0 4px;
+}
+/*找职位-搜索公司输入框*/
 div.searchCompany {
     border-radius: 5px;
     padding-left: 15px;
@@ -133,7 +183,341 @@ div.searchCompany button {
     width: 70px;
     border-radius: 0;
 }
-div.jobBanner div.bannerimg {
-    height: 450px;
-    width: 1000px;
+/*最新职位/推荐职位*/
+div.recommendJobTtile {
+    padding: 20px 0 0;
 }
+div.recommendJobTtile span{
+    font-size: 16px;
+    color: #000000;
+    font-weight: 600;
+    cursor: pointer;
+}
+div.recommendJobTtile span.uncheck {
+    font-size: 14px;
+    font-weight: 300;
+}
+div.recommendJobTtile span.jobMore {
+    float: right;
+}
+div.recommendJobList {
+    padding: 20px 0;
+    background: #ffffff;
+}
+div.recommendJobList > div.col-lg-3 {
+    padding: 15px;
+}
+div.recommendJobList > div.col-lg-3 > div {
+    border: 1px solid #e8e8e8;
+
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+}
+div.recommendJobList > div.col-lg-3 > div > p {
+    padding-left: 30px;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    overflow: hidden;
+    font-size: 14px;
+}
+div.recommendJobList > div.col-lg-3 > div > p:nth-of-type(1) {
+    font-size: 16px;
+    color: #ff0000;
+}
+div.recommendJobList > div.col-lg-3 > div > p:nth-of-type(2) {
+    color: #000000;
+}
+div.recommendJobList > div.col-lg-3 > div > p:nth-of-type(3) {
+    color: #8a98a7;
+}
+div.recommendJobList > div.col-lg-3 > div:hover {
+    box-shadow: 0 0 2px 1px rgba(233,233,233,0.8);
+    cursor: pointer;
+}
+div.recommendJobList img{
+    border-radius: 5px;
+    float: left;
+    width: 90px;
+    height: 90px;
+}
+/*推荐公司*/
+div.recommendCompanyTtile {
+    padding: 20px 0 0;
+}
+div.recommendCompanyTtile span{
+    font-size: 16px;
+    color: #000000;
+    font-weight: 600;
+    cursor: pointer;
+}
+div.recommendCompanyTtile span.companyMore {
+    font-size: 12px;
+    float: right;
+}
+div.recommendCompanyList {
+    padding: 20px 15px;
+    background: #ffffff;
+}
+div.recommendCompanyList > div.bigImg{
+    position: relative;
+    margin: 5px 0;
+    height: 210px;
+    cursor: pointer;
+
+}
+div.recommendCompanyList > div.bigImg > div{
+    position: absolute;
+    left: 10%;
+    bottom: 10%;
+    color: #ffffff;
+}
+div.recommendCompanyList > div.bigImg > div span{
+    display: inline-block;
+    padding: 0 10px;
+}
+div.recommendCompanyList > div.bigImg > div span img{
+    transform: translateY(-2px);
+}
+div.recommendCompanyList > div.bigImg > a > img {
+    width: 100%;
+    height: 100%;
+}
+div.recommendCompanyList > div.col-sm-8 > div.row {
+
+    height: 220px;
+}
+div.recommendCompanyList div.smallImg{
+    height: 110px;
+    cursor: pointer;
+}
+div.recommendCompanyList div.smallImg > div {
+    margin: 5px 0;
+    height: 100px;
+
+}
+div.recommendCompanyList div.smallImg > div img{
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+}
+
+/*推荐公司竖向Banner图*/
+div.recommendCompanybanner {
+    padding: 15px 30px 25px;
+    background: #ffffff;
+    margin-bottom: 30px;
+    position: relative;
+    cursor: pointer;
+}
+div.recommendCompanybanner > a.carousel-control{
+    display: none;
+}
+div.recommendCompanybanner ol.carousel-indicators  {
+    position: absolute;
+    top: 50%;
+    left: 95%;
+    transform: translateY(-55%) rotate(90deg);
+    right: 0;
+    width: 130px;
+    height: 15px;
+    margin-left: -70px;
+}
+div.recommendCompanybanner ol li {
+    border: 1px solid #d9d9d9;
+    width: 15px;
+    height: 15px;
+    margin: 0 8px;
+}
+div.recommendCompanybanner ol li.active {
+    margin: 0 8px;
+    border: 1px solid #fc2b47;
+    width: 15px;
+    height: 15px;
+    background: #fc2b47;
+}
+div.companyBanner {
+    height: 160px;
+}
+div.companyBanner > div.text-center {
+    display: flex;
+    height: 100%;
+    text-align: left;
+}
+div.recommendCompanybanner div.companyDetails{
+    padding: 15px;
+    width: 55%;
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 1px solid #e8e8e8;
+
+}
+div.companyDetails > div {
+    float: left;
+    border-radius: 10px;
+    margin-right: 20px;
+    height: 100%;
+    width: 170px;
+    border: 1px solid #e8e8e8;
+    /*padding: 3px;*/
+}
+div.companyDetails > p:nth-of-type(1) {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+}
+div.companyDetails > p:nth-of-type(2) {
+    font-size: 14px;
+    color: #536a82;
+}
+div.companyDetails > p:nth-of-type(3) span {
+    display: inline-block;
+    border: 1px solid #d9d9d9;
+    padding: 0 5px;
+}
+div.companyDetails > div img{
+    width: 100%;
+    height: 100%;
+}
+div.recommendCompanybanner div.hiringJob{
+    padding: 15px 30px;
+    width: 40%;
+    height: 100%;
+    border: 1px solid #e8e8e8;
+    border-left: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+div.hiringJob p{
+    margin-bottom: 40px;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+/*div.hiringJob span:nth-of-type(1) {*/
+    /*margin-left: -10px;*/
+/*}*/
+
+div.hiringJob > span {
+    display: inline-block;
+    font-size: 16px;
+}
+div.hiringJob > span > span {
+    color: #e8e8e8;
+    padding: 0 10px;
+}
+div.hiringJob > span:last-of-type > span {
+    display: none;
+}
+/*更改为竖向轮播*/
+@media all and (transform-3d), (-webkit-transform-3d) {
+div.recommendCompanybanner div.carousel-inner > .item.next,
+div.recommendCompanybanner div.carousel-inner > .item.active.right{
+    left: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+}
+div.recommendCompanybanner div.carousel-inner > .item.prev,
+div.recommendCompanybanner div.carousel-inner > .item.active.left{
+    left: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+}
+div.recommendCompanybanner div.carousel-inner > .item.next.left,
+div.recommendCompanybanner div.carousel-inner > .item.prev.right,
+div.recommendCompanybanner div.carousel-inner > .item.active {
+    left: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+}
+
+/*找职位页面下面写死部分*/
+div.findJobMore {
+    background: #ffffff;
+}
+div.findJobMore div.col-lg-3  {
+    padding: 80px 0;
+    height: 410px;
+}
+div.findJobMore > div.col-lg-3 > p {
+    font-size: 14px;
+    color: #536a82;
+}
+div.findJobMore > div.col-lg-3 > p:nth-of-type(1) {
+    font-size: 24px;
+    color: #000000;
+    font-weight: bold;
+}
+
+
+/*媒体查询*/
+@media only screen and (max-width: 992px) {
+    div.searchJobNav {
+        display: none;
+    }
+    div.jobBanner {
+        position: static;
+        height: 450px;
+        width: 100%;
+    }
+    /*推荐公司轮播图图片消失*/
+    div.companyDetails > div {
+        display: none;
+    }
+    /*找职位下面写死部分*/
+    div.findJobMore div.col-lg-3  {
+        text-align: center;
+        padding: 40px 28%;
+        height: 280px;
+    }
+    div.reverse {
+        display: flex;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    }
+
+}
+@media only screen and (max-width: 750px) {
+    div.searchJobNav {
+        display: none;
+    }
+    div.jobBanner {
+        position: static;
+        height: auto;
+        width: 100%;
+    }
+    div.jobBanner div.bannerimg img{
+        width: 100%;
+        height: auto;
+    }
+    div.findJobMore div.col-lg-3  {
+        text-align: center;
+        padding: 40px 10%;
+        height: 280px;
+    }
+}
+@media only screen and (max-width: 320px) {
+    div.searchCompany span {
+        display: inline-block;
+        transform: translateY(2px);
+        font-size: 14px;
+        font-weight: bold;
+    }
+    div.searchCompany input {
+        font-size: 12px;
+    }
+    div.jobBanner div.bannerimg >ol >li {
+        height: 8px;
+        width: 8px;
+        margin: 0 2px;
+    }
+
+}
+

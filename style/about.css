@@ -1,0 +1,71 @@
+.about-main{
+    background-color: #F6F7F8;
+    padding-bottom: 20px;
+    margin-top: 20px;
+}
+.about-contact-content {
+    margin-right: 60px;
+    padding: 70px 0;
+    background-color: #fff
+}
+.clickAboutUs{
+    border-left: solid 5px;
+    color: red;
+}
+.unClickAboutUs{
+    border-left: solid 5px;
+    color: red;
+}
+.paddingLeft{
+    padding-left: 5px;
+}
+.about-contact-content>ul>li{
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+.about-contact-content>ul>li:hover{
+    color: red;
+    background-color: #F6F7F8;
+}
+.about-contact-intro{
+    background-color: white;
+}
+.about-contact-intro>ul{
+    color: #2b3d51;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 5rem;
+}
+.about-us-title{
+    font-weight: 500;
+    font-size: 16px;
+    border-left: 5px solid #fc2a48;
+    text-indent: 7px;
+    margin: 2rem 0;
+    color: #2b3d51;
+}
+.about-us-content{
+    display: block;
+    text-align: justify;
+    text-indent: 2em;
+    margin: 36px 0 36px 12px;
+
+}
+.contact-us-company{
+    font-weight: 700;
+    font-size: 16px;
+    text-indent: 0;
+    margin: 2rem 0;
+    color: #2b3d51;
+}
+.contact-us-detail{
+    line-height: 14px;
+    padding: 10px 0;
+}
+.contact-us-img{
+    line-height: 14px;
+    padding: 10px 0;
+    overflow: hidden;
+}
+

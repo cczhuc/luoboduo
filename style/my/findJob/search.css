@@ -1,0 +1,21 @@
+div.searchTitle {
+    height:40px;
+    border-bottom: 2px solid #ff0000;
+    display: flex;
+    justify-content:flex-start;
+}
+div.searchTitleCompany,
+div.searchTitleJob {
+    margin-top: 13px;
+    width: 75px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    color: #536a82;
+    font-size: 16px;
+    cursor: pointer;
+}
+div.searchTitle > div.searchActive {
+    color: #ffffff;
+    background: #fc2a48;
+}

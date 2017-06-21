@@ -1,6 +1,6 @@
 
 app.config(projectRouteConfig);//将路由配置为函数，而不是就写在config里面，这样改动方便，
-function projectRouteConfig($stateProvider,$urlRouterProvider,$ocLazyLoadProvider) {
+function projectRouteConfig($stateProvider,$urlRouterProvider,$ocLazyLoadProvider,$locationProvider) {
     //增加复用性,在路由中按需加载，只需调用函数而不用写一大段代码
     var _lazyLoad = function (loaded) {
         return function ($ocLazyLoad) {
@@ -11,185 +11,205 @@ function projectRouteConfig($stateProvider,$urlRouterProvider,$ocLazyLoadProvide
         debug: false,//用来开启debug模式。布尔值，默认是false。当开启debug模式时，$ocLazyLoad会打印出所有的错误到console控制台上。
         events: true//当你动态加载了module的时候，$ocLazyLoad会广播相应的事件。布尔值，默认为false。
     });
+    // $locationProvider.html5Mode(true);//去掉URL中的#号
 
     $urlRouterProvider.otherwise('/home');
     $stateProvider
-    // //index页面，主要有导航栏和页脚,如果要把这个写上，需要把导航栏和页脚提出来一个html
-        // .state("app",{
-        //     url: '',
-        //     templateUrl: '',
-        //     controller: '',
-        //     controllerAs: 'vm',//在控制器中，令vm=this，可用vm代替$scope。如果this出现问题，只需vm=$scope.
-        //     abstract: true,
-        //     //abstract: true 表明此状态不能被显性激活，只能被子状态隐性激活。
-        //     //不能显性激活即不能直接通过"/app"访问此状态路由，这样使得我们必须
-        //     //只有在其余几个页面才能激活这个状态，不然可能显示出只有导航栏和页脚的页面
-        //     //写给自己看的，请见谅
-        //
-        //     // resolve: {
-        //     //     loadMyFile: _lazyLoad([
-        //     //         ''
-        //     //     ])
-        //     // }
-        // })
+        .state('myApp', {
+            url: '',
+            templateUrl: 'view/main.html',
+            controller: 'mainCtrl',
+            controllerAs: 'vm',
+            abstract: true,
+            resolve: {
+                loadMyFile: _lazyLoad([
+                    'style/main.css',
+                    'script/controller/mainCtrl.js'
+                ])
+            }
+        })
         //首页
-        .state("home",{
+        .state("myApp.home",{
             url:"/home",
-            templateUrl:"../view/home.html",
-            controller: '',
-            controllerAs: 'vm',
-            // resolve: {
-            //     loadMyFile: _lazyLoad([
-            //         ''
-            //     ])
-            // }
-        })
-        //关于我们和联系我们公共部分
-        .state("about",{
-            url:"/about",
-            templateUrl:"../view/about.html",
-            controller: '',
-            controllerAs: 'vm',
-            // resolve: {
-            //     loadMyFile: _lazyLoad([
-            //         ''
-            //     ])
-            // }
-        })
-        //找职位
-        .state("findJob",{
-            url:"/findJob",
-            templateUrl:"../view/findJob/findJob.html",
-            controller: '',
+            templateUrl:"view/home.html",
+            controller: 'homeCtrl',
             controllerAs: 'vm',
             resolve: {
                 loadMyFile: _lazyLoad([
-                    '../style/my/findJob/findJob.css',
+                    'style/home.css',
+                    'script/directors/homeFriendCarousel/homeFriendCar.css',
+                    'script/controller/homeCtrl.js'
+                ])
+            }
+        })
+
+        //找职位
+        .state("myApp.findJob",{
+            url:"/findJob",
+            templateUrl:"view/findJob/findJob.html",
+            controller: 'findJobCtrl',
+            controllerAs: 'vm',
+            resolve: {
+                loadMyFile: _lazyLoad([
+                    'style/my/findJob/findJob.css',
                     'script/controller/findJobCtrl.js'
                 ])
             }
         })
-        //找精英
-        .state("findElite",{
-            url:"/findElite",
-            templateUrl:"../view/findElite/findElite.html",
-            controller: '',
+        //关于我们和联系我们公共部分
+        .state("myApp.about",{
+            url:"/about?status",
+            templateUrl:"view/about.html",
+            controller: 'aboutCtrl',
             controllerAs: 'vm',
-            // resolve: {
-            //     loadMyFile: _lazyLoad([
-            //         ''
-            //     ])
-            // }
+            resolve: {
+                loadMyFile: _lazyLoad([
+                    'style/about.css',
+                    'script/controller/aboutCtrl.js'
+                ])
+            }
+        })
+        //找精英
+        .state("myApp.findElite",{
+            url:"/findElite",
+            templateUrl:"view/findElite/findElite.html",
+            controller: 'findEliteCtrl',
+            controllerAs: 'vm',
+            resolve: {
+                loadMyFile: _lazyLoad([
+                    'style/findElite.css',
+                    'script/controller/findEliteCtrl.js'
+                ])
+            }
         })
         //找精英-公司列表
-        .state("companyList",{
-            url:"/companyList",
-            templateUrl:"../view/findElite/companyList.html",
-            controller:"",
+        .state("myApp.companyList",{
+            url:"/companyList?page&size&data",
+            params:{data:null},
+            templateUrl:"view/findElite/companyList.html",
+            controller:"companyListCtrl",
             controllerAs:"vm",
-            // resolve: {
-            //     loadMyFile: _lazyLoad([
-            //         ''
-            //     ])
-            // }
+            resolve: {
+                loadMyFile: _lazyLoad([
+                    'style/companyList.css',
+                    'style/my/findJob/searchCompany.css',
+                    'script/controller/companyListCtrl.js',
+                    'script/directors/tm.pagination/tm.pagination.css'
+                ])
+            }
         })
         //找职位-推荐职位,最新职位搜索
-        .state('jobList', {
-            url: '/jobList',
-            templateUrl: '../view/findJob/jobList.html',
-            controller: '',
+        .state('myApp.jobList', {
+            url: '/jobList?judge&name&page&size&data',
+            templateUrl: 'view/findJob/jobList.html',
+            params:{data:null},
+            controller: 'jobListCtrl',
             controllerAs: 'vm',
             cache: false,//配合reload使用，每次跳转页面刷新
-            // resolve: {
-            //     loadMyFile: _lazyLoad([
-            //         ''
-            //     ])
-            // }
+            resolve: {
+                loadMyFile: _lazyLoad([
+                    'style/my/findJob/jobList.css',
+                    'script/directors/tm.pagination/tm.pagination.css',
+                    'script/controller/jobListCtrl.js'
+                ])
+            }
         })
         //找职位-搜索公司/搜索职业公共部分，顶边及侧边
-        .state('search', {
+        .state('myApp.search', {
             url: '/search',
-            templateUrl: '../view/findJob/search.html',
-            controller: '',
+            params:{judge:""},
+            templateUrl: 'view/findJob/search.html',
+            controller: 'searchCtrl',
             controllerAs: 'vm',
-            // resolve: {
-            //     loadMyFile: _lazyLoad([
-            //         ''
-            //     ])
-            // }
+            resolve: {
+                loadMyFile: _lazyLoad([
+                    'style/my/findJob/search.css',
+                    'script/controller/searchCtrl.js'
+                ])
+            }
         })
         //找职位-搜索公司页
-        .state('search.searchCompany', {
-            url: '/searchCompany',
-            templateUrl: '../view/findJob/searchCompany.html',
-            controller: '',
+        .state('myApp.search.searchCompany', {
+            url: '/searchCompany?page&size&name&data',
+            params:{data:null},
+            templateUrl: 'view/findJob/searchCompany.html',
+            controller: 'searchCompanyCtrl',
             controllerAs: 'vm',
-            // resolve: {
-            //     loadMyFile: _lazyLoad([
-            //         ''
-            //     ])
-            // }
+            resolve: {
+                loadMyFile: _lazyLoad([
+                    'style/my/findJob/searchCompany.css',
+                    'script/controller/searchCompanyCtrl.js',
+                    'script/directors/tm.pagination/tm.pagination.css'
+                ])
+            }
         })
         //找职位-搜索职位页
-        .state('search.searchJob', {
-            url: '/searchJob',
-            templateUrl: '../view/findJob/searchJob.html',
-            controller: '',
+        .state('myApp.search.searchJob', {
+            url: '/searchJob?page&size&name&data',
+            params:{data:null},
+            templateUrl: 'view/findJob/searchJob.html',
+            controller: 'searchJobCtrl',
             controllerAs: 'vm',
-            // resolve: {
-            //     loadMyFile: _lazyLoad([
-            //         ''
-            //     ])
-            // }
+            resolve: {
+                loadMyFile: _lazyLoad([
+                    'style/my/findJob/searchJob.css',
+                    'script/controller/searchJobCtrl.js',
+                    'script/directors/tm.pagination/tm.pagination.css'
+                ])
+            }
         })
         //找职位-公司详情和在招职位公共部分
-        .state('companyInfo', {
-            url: '/companyInfo',
-            templateUrl: '../view/findJob/companyInfo.html',
-            controller: '',
+        .state('myApp.companyInfo', {
+            url: '/companyInfo?id&page&size',
+            templateUrl: 'view/findJob/companyInfo.html',
+            controller: 'companyInfoCtrl',
             controllerAs: 'vm',
-            // resolve: {
-            //     loadMyFile: _lazyLoad([
-            //         ''
-            //     ])
-            // }
+            resolve: {
+                loadMyFile: _lazyLoad([
+                    'style/my/findJob/companyInfo.css',
+                    'script/controller/companyInfoCtrl.js'
+                ])
+            }
         })
         //找职位-公司详情
-        .state('companyInfo.companyDetails', {
+        .state('myApp.companyInfo.companyDetails', {
             url: '/companyDetails',
-            templateUrl: '../view/findJob/companyDetails.html',
-            controller: '',
+            templateUrl: 'view/findJob/companyDetails.html',
+            controller: 'companyDetailsCtrl',
             controllerAs: 'vm',
-            // resolve: {
-            //     loadMyFile: _lazyLoad([
-            //         ''
-            //     ])
-            // }
+            resolve: {
+                loadMyFile: _lazyLoad([
+                    'style/my/findJob/companyDetails.css',
+                    'script/controller/companyDetailsCtrl.js'
+                ])
+            }
         })
         //找职位-在招职位
-        .state('companyInfo.hiringJob', {
-            url: '/hiringJob',
-            templateUrl: '../view/findJob/hiringJob.html',
-            controller: '',
+        .state('myApp.companyInfo.hiringJob', {
+            url: '/hiringJob?page&size',
+            templateUrl: 'view/findJob/hiringJob.html',
+            controller: 'hiringJobCtrl',
             controllerAs: 'vm',
-            // resolve: {
-            //     loadMyFile: _lazyLoad([
-            //         ''
-            //     ])
-            // }
+            resolve: {
+                loadMyFile: _lazyLoad([
+                    'style/my/findJob/hiringJob.css',
+                    'script/directors/tm.pagination/tm.pagination.css',
+                    'script/controller/hiringJobCtrl.js'
+                ])
+            }
         })
         //找职位-职位详情
-        .state('jobDetails', {
-            url: '/jobDetails',
-            templateUrl: '../view/findJob/jobDetails.html',
-            controller: '',
+        .state('myApp.jobDetails', {
+            url: '/jobDetails?id',
+            templateUrl: 'view/findJob/jobDetails.html',
+            controller: 'jobDetailsCtrl',
             controllerAs: 'vm',
-            // resolve: {
-            //     loadMyFile: _lazyLoad([
-            //         ''
-            //     ])
-            // }
-        })
-
+            resolve: {
+                loadMyFile: _lazyLoad([
+                    'style/my/findJob/jobDetails.css',
+                    'script/controller/jobDetailsCtrl.js'
+                ])
+            }
+        });
 
 }

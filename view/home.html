@@ -1,3 +1,148 @@
-<div>
-    首页
-</div>
+
+    <!--首页banner轮播-->
+        <div uib-carousel  class="home-banner" active="active1" interval="vm.myInterval">
+            <div uib-slide  ng-repeat="homeBanner in vm.homeBannerList track by $index" index="$index">
+                <a  ng-href="{{homeBanner.url}}" target="_blank">
+                    <img ng-src="{{homeBanner.img}}">
+                </a>
+            </div>
+        </div>
+    <!--优势简介-->
+    <div class="home-introduce">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 introduce-tag text-center">
+                    <img src="images/jianjie-1.png" alt="">
+                    <span>超短响应时间</span>
+                    <p>48小时高效推荐</p>
+                </div>
+                <div class="col-md-3 introduce-tag text-center">
+                    <img src="images/jianjie-2.png" alt="">
+                    <span>行业1/3的价格</span>
+                    <p>成功推荐仅收费1月工资</p>
+                </div>
+                <div class="col-md-3 introduce-tag text-center">
+                    <img src="images/jianjie-3.png" alt="">
+                    <span>三位的人才评测</span>
+                    <p>技术人事背景三位评定</p>
+                </div>
+                <div class="col-md-2 introduce-tag-data text-center">
+                    <div>
+                        <p class="introduce-tag-data-num">5家</p>
+                        <p>信赖公司</p>
+                    </div>
+                    <div>
+                        <p class="introduce-tag-data-num">1500+</p>
+                        <p>人才库</p>
+                    </div>
+                    <div>
+                        <p class="introduce-tag-data-num">200+</p>
+                        <p>人才入职</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--最新职位-->
+    <div class="home-new-job bg-f7">
+        <div class="container">
+            <!--职位标题-->
+            <div class="home-new-job-title">
+                <span>最新职位</span>
+                <div></div>
+                <p>NEW POSITION</p>
+            </div>
+            <div class="row">
+                <div class="home-new-job-more col-md-10 col-md-offset-1" ui-sref="myApp.jobList({judge:true})">更多></div>
+            </div>
+            <!--职位轮播-->
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1" ng-controller="newJobCtrl">
+                    <div  uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides" class="home-jobCarousel-setting">
+                        <div style="height: 200px; width: 100%;margin: 0 auto" class=" text-center "
+                             uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id" >
+                            <div  class="col-md-3 col-sm-12 col-xs-12 " ng-repeat="obj in slide.div" ui-sref="jobDetails({id:obj.id})">
+                                <div class="home-jobCarousel-item">
+                                    <div class="home-jobCarousel-itemImg">
+                                        <img ng-src="{{obj.logo}}"/>
+                                    </div>
+                                    <div style="padding: 10px 0">
+                                        <div><b>{{obj.name}}</b></div>
+                                        <div><b>{{obj.companyName}} </b></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--服务流程-->
+    <div class="home-service bg-fff">
+        <div class="container">
+            <div class="home-new-job-title">
+                <span>服务流程</span>
+                <div></div>
+                <p>SERVICE FLOW</p>
+            </div>
+            <div class="row">
+                <div class="col-md-2 col-xs-12 col-md-offset-1">
+                    <div class="home-service-item">
+                        <img src="images/home-service1.png" alt="">
+                        <p>1.意向洽谈。深入评审</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-xs-12 home-service-icon">
+                    <i class="fa fa-fighter-jet fa-2x" aria-hidden="true"></i>
+                </div>
+                <div class="col-md-2 col-xs-12">
+                    <div class="home-service-item">
+                        <img src="images/home-service2.png" alt="">
+                        <p>2.确认合作，签订合同</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-xs-12 home-service-icon">
+                    <i class="fa fa-fighter-jet fa-2x" aria-hidden="true"></i>
+                </div>
+                <div class="col-md-2 col-xs-12">
+                    <div class="home-service-item">
+                        <img src="images/home-service3.png" alt="">
+                        <p>3.提供需求，提出jd</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 col-xs-12 col-md-offset-1">
+                    <div class="home-service-item">
+                        <img src="images/home-service4.png" alt="">
+                        <p>4.开始招聘。人才精选</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-xs-12 home-service-icon">
+                    <i class="fa fa-fighter-jet fa-2x" aria-hidden="true"></i>
+                </div>
+                <div class="col-md-2 col-xs-12">
+                    <div class="home-service-item">
+                        <img src="images/home-service5.png" alt="">
+                        <p>5.意向洽谈。深入评审</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-xs-12 home-service-icon">
+                    <i class="fa fa-fighter-jet fa-2x" aria-hidden="true"></i>
+                </div>
+                <div class="col-md-2 col-xs-12">
+                    <div class="home-service-item">
+                        <img src="images/home-service6.png" alt="">
+                        <p>6.上岗，转入售后</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--伙伴之言-->
+    <div class="home-comment bg-grey">
+        <div class="container">
+            <jqcarouse></jqcarouse>
+        </div>
+    </div>

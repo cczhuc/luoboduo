@@ -1,7 +1,12 @@
-<div>
-    找职位-搜索公司/搜索职业公共部分，顶边及侧边
-    <a href="" ui-sref="search.searchCompany">找职位-搜索公司页</a>
-    <a href="" ui-sref="search.searchJob">找职位-搜索公司页</a>
+<div class="container">
+    <div class="searchTitle">
+        <div class="searchTitleCompany" ui-sref="myApp.search.searchCompany" ng-class={"searchActive":!vm.jduge} ng-click="vm.exchange0()">
+            公司
+        </div>
+        <div class="searchTitleJob" ui-sref="myApp.search.searchJob" ng-class={"searchActive":vm.jduge} ng-click="vm.exchange1()">
+            职业
+        </div>
+    </div>
     <div ui-view="">
 
     </div>

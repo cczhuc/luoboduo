@@ -6,12 +6,12 @@ app.factory("address",function ($state,$http){
         },
 
         //搜索职位, 职位状态 recommend  0-最新职位 1-推荐职位
-        searchjob_url: function (type) {
+        searchJob_url: function (type) {
             return "/carrots-ajax/a/profession/search?recommend="+type
         },
         //搜索公司, 认证状态  approvedStatus 0-未认证 1-已认证
         searchCompany_url: function (type) {
-            return "/carrots-ajax/a/company/search?approvedStatus="+type
+            return "/carrots-ajax/a/company/search?returnPage="+type
         },
         //职位详情
         jobDetails_url: function (id) {
