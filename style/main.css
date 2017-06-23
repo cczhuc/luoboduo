@@ -1,11 +1,10 @@
-/*.navbar-static-top {*/
-    /*padding-bottom: 20px;*/
-    /*background-color: #f6f7f8;*/
-/*}*/
+
 body {
     min-width: 320px;
 }
-
+body > div {
+    background: #f6f7f8;
+}
 .header-panel {
     background-color: white;
     box-shadow: 0 4px 7px #eeeef0;
@@ -15,34 +14,33 @@ body {
   cursor: pointer;
 }
 .main-location {
-  font-size: 16px;
-  display: inline-block;
-  margin-top: 25px;
-  margin-left: 20px;
-  padding: 6px 0 6px 15px;
-  border-left: 1px solid #e2e2e2;
+    display: inline-block;
+    margin-top: 25px;
+    margin-left: 20px;
+    padding: 6px 0 6px 15px;
+    font-size: 16px;
+    border-left: 1px solid #e2e2e2;
 }
 .selected-location {
-  vertical-align: middle;
-  margin-left: 4px;
-  font-size: 16px;
-  color: #333;
+    vertical-align: middle;
+    margin-left: 4px;
+    font-size: 16px;
+    color: #333;
 }
 .nav-page{
-  font-size: 16px;
-  line-height: 77px;
-  margin: 0 24px;
-  cursor: pointer;
-  text-align: center;
-  color: #2d3e50;
+    text-align: center;
+    line-height: 77px;
+    margin: 0 24px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #2d3e50;
 }
 .nav-page-underline {
-  display: block;
-  width: 0;
-  height: 3px;
-  margin: 0 auto;
-  background-color: #fc2b47;
-    -webkit-transition: width .2s;
+    display: block;
+     width: 0;
+    height: 3px;
+    margin: 0 auto;
+    background-color: #fc2b47;
 }
 
 
@@ -78,9 +76,11 @@ body {
 }
 
 .footer-link-a, .footer-top {
-    color: #b0b0b0;
     font-size: 16px;
-    text-decoration: none;
+    color: #b0b0b0;
+}
+.footer-link-a:hover{
+    color: red;
 }
 .footer-top {
     width: 100%;
@@ -115,7 +115,4 @@ body {
     color: #999;
     padding: 5px 0;
     font-size: 12px;
-}
-body > div {
-    background: #f6f7f8;
 }

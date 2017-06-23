@@ -1,23 +1,10 @@
 /**
  * Created by Administrator on 2017/6/12 0012.
  */
-// app.controller('companyListCtrl',["portService",'$state','searchOptions',
-//     function (portService,$state,searchOptions) {
-//         var vm = this;
-//         //搜索导航常量
-//         vm.searchOptions = searchOptions;
-//         //接口有问题，只能获取普通公司，暂时用着
-//         //跟找精英页面的找公司渲染的是同一组数据,直接拿来用
-//         portService.getSearchCompany(0).then(function successCallback(response) {
-//             if (response.data.code === 0){
-//                 vm.findEliteSuccessCase = response.data.data.slice(0,9);
-//                 console.log(vm.findEliteSuccessCase);
-//             }
-//         })
-// }]);
 app.controller("companyListCtrl",["portService","$scope","$state",'searchOptions','searchUtil','commonUtil',
     function (portService,$scope,$state,searchOptions,searchUtil,commonUtil) {
         var vm=this;
+        commonUtil.scrollTo(0, 0);
         vm.params = $state.params;//
         console.log(vm.params);
         // 获取搜索模块的基础数据

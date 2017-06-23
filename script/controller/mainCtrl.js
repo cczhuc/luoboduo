@@ -6,7 +6,4 @@ app.controller('mainCtrl', ['$scope', '$rootScope', '$state',
         var vm = this;
         // html界面检测url中的值
         $rootScope.$state = $state;
-        console.log($state);
-        // console.log(vm.$state.current);
-
     }]);

@@ -3,9 +3,9 @@ div.content {
     margin-bottom: 15px;
 }
 div.searchOptions {
+    margin: 0 0 20px;
     padding: 20px;
     background: #ffffff;
-    margin: 0 0 20px;
 }
 div.searchOption {
     padding: 10px 0;
@@ -25,17 +25,17 @@ div.searchOption input:focus{
     box-shadow: 0 0 2px 1px rgba(102,175,233,0.4);
 }
 div.searchOption span{
+    padding-right: 15px;
     font-size: 14px;
     color: #000000;
     font-weight: bolder;
-    padding-right: 15px;
 }
 div.searchOption a {
     display: inline-block;
-    height: 25px;
-    line-height: 25px;
     padding: 0 15px;
     margin: 0 5px;
+    height: 25px;
+    line-height: 25px;
     text-decoration: none;
     color: #536a82;
     cursor: pointer;
@@ -81,15 +81,14 @@ div.jobList:hover {
     box-shadow: 0 0 2px 1px #e8e8e8;
 }
 div.jobList div.col-md-6 {
-
     position: relative;
-    height: 100%;
 }
 /*职位信息*/
 div.jobsDetails {
     padding-top: 10px;
     border-right: 1px solid #d9d9d9;
 }
+
 div.jobsDetails p:nth-of-type(1) > span:nth-of-type(1){
     font-size: 16px;
     font-weight: bold;
@@ -109,8 +108,8 @@ div.jobsDetails p:nth-of-type(3) {
     color: #536a82
 }
 div.jobList div.col-md-6 div.col-xs-9{
-    padding: 10px 0 0 20px;
     float: left;
+    padding: 10px 0 0 20px;
 }
 div.jobList div.col-md-6 div.col-xs-3 {
     padding: 0;
@@ -124,6 +123,14 @@ div.jobList div.col-md-6 img {
     border: 1px solid #e8e8e8;
     border-radius: 5px;
 }
+@media only screen and (max-width: 992px) {
+    div.jobsDetails {
+        border-right: none;
+    }
+    div.jobList div.col-md-6 div.col-xs-9 {
+        padding: 0;
+    }
+}
 /*职位中的公司信息*/
 div.company-Detail > div > p:nth-of-type(1) {
     font-size: 14px;
@@ -132,9 +139,9 @@ div.company-Detail > div > p:nth-of-type(1) {
 }
 div.company-Detail p:nth-of-type(2) span{
     padding: 0 10px;
+    border-right: 1px solid #d9d9d9;
     font-size: 14px;
     color: #536a82;
-    border-right: 1px solid #d9d9d9;
 }
 div.company-Detail p:nth-of-type(2) span:nth-of-type(1){
     margin-left: -10px;
@@ -147,17 +154,17 @@ div.company-Detail p:nth-of-type(3) span{
     border-radius: 10px;
     margin-right: 20px;
     border: 1px solid #d9d9d9;
-    min-width: 70px;
     height: 22px;
     line-height: 22px;
+    min-width: 70px;
     font-size: 12px;
     color: #536a82;
     text-align: center;
 }
 /*没有搜索结果时出现推荐职位*/
 div.no-items-recommendJob {
-    background: #ffffff;
     padding: 30px 15px;
+    background: #ffffff;
 }
 div.no-items-recommendJob div.title{
     border-top: 1px solid #d9d9d9;
@@ -166,10 +173,9 @@ div.no-items-recommendJob div.title{
     font-weight: bold;
 }
 div.no-items-recommendJob > div.row {
-    border-bottom: 1px solid #d9d9d9;
     padding: 0 0 30px;
+    border-bottom: 1px solid #d9d9d9;
 }
-
 div.recommendJobList {
     padding: 20px 0;
     background: #ffffff;
@@ -178,11 +184,9 @@ div.recommendJobList > div.col-lg-3 {
     padding: 15px;
 }
 div.recommendJobList > div.col-lg-3 > div {
-    border: 1px solid #e8e8e8;
-
     padding: 10px;
+    border: 1px solid #e8e8e8;
     width: 100%;
-    height: 100%;
 }
 div.recommendJobList > div.col-lg-3 > div > p {
     padding-left: 30px;

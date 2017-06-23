@@ -186,7 +186,7 @@ function projectRouteConfig($stateProvider,$urlRouterProvider,$ocLazyLoadProvide
         })
         //找职位-在招职位
         .state('myApp.companyInfo.hiringJob', {
-            url: '/hiringJob?page&size',
+            url: '/hiringJob',
             templateUrl: 'view/findJob/hiringJob.html',
             controller: 'hiringJobCtrl',
             controllerAs: 'vm',

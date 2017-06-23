@@ -1,5 +1,5 @@
 'use strict';
-app.factory('commonUtil', function ($rootScope, $state, searchOptions, $location) {
+app.factory('commonUtil', function ($rootScope) {
     return {
         pageDefault: {page: 1, size: 10, next: true},
 

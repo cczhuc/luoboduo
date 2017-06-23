@@ -1,7 +1,7 @@
 .about-main{
-    background-color: #F6F7F8;
     padding-bottom: 20px;
     margin-top: 20px;
+    background-color: #F6F7F8;
 }
 .about-contact-content {
     margin-right: 60px;
@@ -11,10 +11,12 @@
 .clickAboutUs{
     border-left: solid 5px;
     color: red;
+    background-color: #F6F7F8;
 }
 .unClickAboutUs{
     border-left: solid 5px;
     color: red;
+    background-color: #F6F7F8;
 }
 .paddingLeft{
     padding-left: 5px;
@@ -32,40 +34,42 @@
     background-color: white;
 }
 .about-contact-intro>ul{
-    color: #2b3d51;
-    margin: 0 auto;
     overflow: hidden;
-    padding: 5rem;
+    margin: 0 auto;
+    padding: 50px;
+    color: #2b3d51;
 }
 .about-us-title{
-    font-weight: 500;
-    font-size: 16px;
+    margin: 20px 0;
     border-left: 5px solid #fc2a48;
+    font-size: 16px;
+    font-weight: 500;
     text-indent: 7px;
-    margin: 2rem 0;
     color: #2b3d51;
 }
 .about-us-content{
     display: block;
     text-align: justify;
-    text-indent: 2em;
     margin: 36px 0 36px 12px;
-
+    text-indent: 28px;
 }
 .contact-us-company{
     font-weight: 700;
     font-size: 16px;
     text-indent: 0;
-    margin: 2rem 0;
+    margin: 20px 0;
     color: #2b3d51;
 }
 .contact-us-detail{
-    line-height: 14px;
+    display: inline-block;
     padding: 10px 0;
+    margin-right: 10px;
+    min-width: 48%;
+    line-height: 14px;
 }
 .contact-us-img{
-    line-height: 14px;
-    padding: 10px 0;
     overflow: hidden;
+    padding: 10px 0;
+    line-height: 14px;
 }
 

@@ -19,8 +19,8 @@ div.thirdNav {
     height: 150px;
 }
 div.menu-item {
-    height: 150px;
     padding: 10px 0 10px 10px;
+    height: 150px;
     width: 240px;
     background: rgba(244,56,81,0.9);
     color: #ffffff;
@@ -45,10 +45,10 @@ span.menu-logo1,
 span.menu-logo2,
 span.menu-logo3 {
     display: inline-block;
-    transform: translateY(3px);
     margin: auto 10px;
     width: 18px;
     height: 18px;
+    transform: translateY(3px);
 }
 span.menu-logo1 {
     background: url("../../../images/findJob-searchNav-1w.png") no-repeat;
@@ -111,10 +111,10 @@ div.thirdNav:hover > div.menu-details {
 div.firstNav:hover div.menu-item,
 div.secondNav:hover div.menu-item,
 div.thirdNav:hover div.menu-item {
-    background: #ffffff;
-    color: rgba(244,56,81,0.9);
     border-top: 1px solid rgba(244,56,81,0.9);
     border-bottom: 1px solid rgba(244,56,81,0.9);
+    color: rgba(244,56,81,0.9);
+    background: #ffffff;
 }
 div.firstNav:hover div.menu-item > div > a,
 div.secondNav:hover div.menu-item > div > a,
@@ -135,10 +135,10 @@ div.jobBanner > form {
     top: 35px;
     margin: 0;
     padding: 15px;
+    border-radius: 10px;
     width: 80%;
     height: 70px;
     background: rgba(0,0,0,0.4);
-    border-radius: 10px;
     z-index: 100;
 }
 div.jobBanner div.bannerimg img{
@@ -149,9 +149,9 @@ div.jobBanner div.bannerimg >a >span {
     background: rgba(255,255,255,0.5);
 }
 div.jobBanner div.bannerimg >ol >li {
+    margin: 0 4px;
     height: 12px;
     width: 12px;
-    margin: 0 4px;
 }
 /*找职位-搜索公司输入框*/
 div.searchCompany {
@@ -184,60 +184,60 @@ div.searchCompany button {
     border-radius: 0;
 }
 /*最新职位/推荐职位*/
-div.recommendJobTtile {
+div.recommend-job-title {
     padding: 20px 0 0;
 }
-div.recommendJobTtile span{
+div.recommend-job-title span{
+    padding-bottom: 8px;
     font-size: 16px;
-    color: #000000;
     font-weight: 600;
+    color: #000000;
     cursor: pointer;
 }
-div.recommendJobTtile span.uncheck {
+div.recommend-job-title span.uncheck {
     font-size: 14px;
     font-weight: 300;
 }
-div.recommendJobTtile span.jobMore {
+div.recommend-job-title span.jobMore {
     float: right;
+    font-weight: 500;
 }
-div.recommendJobList {
+div.recommend-job-list {
     padding: 20px 0;
     background: #ffffff;
 }
-div.recommendJobList > div.col-lg-3 {
+div.recommend-job-list > div.col-lg-3 {
     padding: 15px;
 }
-div.recommendJobList > div.col-lg-3 > div {
+div.recommend-job-list > div.col-lg-3 > div {
     border: 1px solid #e8e8e8;
-
     padding: 10px;
-    width: 100%;
-    height: 100%;
 }
-div.recommendJobList > div.col-lg-3 > div > p {
+div.recommend-job-list > div.col-lg-3 > div > p {
     padding-left: 30px;
     white-space:nowrap;
     text-overflow:ellipsis;
     overflow: hidden;
     font-size: 14px;
 }
-div.recommendJobList > div.col-lg-3 > div > p:nth-of-type(1) {
+div.recommend-job-list > div.col-lg-3 > div > p:nth-of-type(1) {
     font-size: 16px;
     color: #ff0000;
 }
-div.recommendJobList > div.col-lg-3 > div > p:nth-of-type(2) {
+div.recommend-job-list > div.col-lg-3 > div > p:nth-of-type(2) {
     color: #000000;
 }
-div.recommendJobList > div.col-lg-3 > div > p:nth-of-type(3) {
+div.recommend-job-list > div.col-lg-3 > div > p:nth-of-type(3) {
     color: #8a98a7;
 }
-div.recommendJobList > div.col-lg-3 > div:hover {
+div.recommend-job-list > div.col-lg-3 > div:hover {
     box-shadow: 0 0 2px 1px rgba(233,233,233,0.8);
     cursor: pointer;
 }
-div.recommendJobList img{
-    border-radius: 5px;
+div.recommend-job-list img{
     float: left;
+    border-radius: 5px;
+    border:1px solid #e8e8e8;
     width: 90px;
     height: 90px;
 }
@@ -246,14 +246,16 @@ div.recommendCompanyTtile {
     padding: 20px 0 0;
 }
 div.recommendCompanyTtile span{
+    padding-bottom: 10px;
     font-size: 16px;
     color: #000000;
     font-weight: 600;
     cursor: pointer;
 }
 div.recommendCompanyTtile span.companyMore {
-    font-size: 12px;
     float: right;
+    font-size: 12px;
+    font-weight: 500;
 }
 div.recommendCompanyList {
     padding: 20px 15px;
@@ -395,9 +397,6 @@ div.hiringJob p{
     font-weight: bold;
 
 }
-/*div.hiringJob span:nth-of-type(1) {*/
-    /*margin-left: -10px;*/
-/*}*/
 
 div.hiringJob > span {
     display: inline-block;

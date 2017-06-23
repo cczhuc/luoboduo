@@ -1,6 +1,4 @@
-html{
-    font-family: "Microsoft YaHei";
-}
+
 body{
     font-family: "Microsoft YaHei";
 }
@@ -70,6 +68,8 @@ img{
 .font-12{
     font-size: 12px;
 }
+
+/*颜色*/
 .color-gray{
     color: gray;
 }

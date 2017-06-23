@@ -1,9 +1,9 @@
 <div class="container">
     <div class="searchTitle">
-        <div class="searchTitleCompany" ui-sref="myApp.search.searchCompany" ng-class={"searchActive":!vm.jduge} ng-click="vm.exchange0()">
+        <div class="searchTitleCompany" ui-sref="myApp.search.searchCompany" ng-class={"searchActive":$state.includes('myApp.search.searchCompany')}>
             公司
         </div>
-        <div class="searchTitleJob" ui-sref="myApp.search.searchJob" ng-class={"searchActive":vm.jduge} ng-click="vm.exchange1()">
+        <div class="searchTitleJob" ui-sref="myApp.search.searchJob" ng-class={"searchActive":$state.includes('myApp.search.searchJob')}>
             职业
         </div>
     </div>

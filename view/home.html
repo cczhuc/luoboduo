@@ -61,12 +61,12 @@
                     <div  uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides" class="home-jobCarousel-setting">
                         <div style="height: 200px; width: 100%;margin: 0 auto" class=" text-center "
                              uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id" >
-                            <div  class="col-md-3 col-sm-12 col-xs-12 " ng-repeat="obj in slide.div" ui-sref="jobDetails({id:obj.id})">
+                            <div  class="col-md-3 col-sm-12 col-xs-12 " ng-repeat="obj in slide.div" >
                                 <div class="home-jobCarousel-item">
-                                    <div class="home-jobCarousel-itemImg">
+                                    <div class="home-jobCarousel-itemImg" ui-sref="myApp.jobDetails({id:obj.id})">
                                         <img ng-src="{{obj.logo}}"/>
                                     </div>
-                                    <div style="padding: 10px 0">
+                                    <div style="padding: 10px 0" class="home-jobCarousel-itemText" ui-sref="myApp.companyInfo.companyDetails({id:obj.companyId})">
                                         <div><b>{{obj.name}}</b></div>
                                         <div><b>{{obj.companyName}} </b></div>
                                     </div>

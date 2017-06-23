@@ -12,9 +12,9 @@ p.companyDetails-title {
 }
 /*公司产品*/
 div.companyProduct > img {
+    float: left;
     width: 150px;
     height: 150px;
-    float: left;
 }
 div.companyProduct > div {
     padding: 25px 0 50px 200px;
@@ -47,8 +47,8 @@ div.companyIntroduce p:nth-of-type(2){
 
 @media only screen and (max-width:600px) {
     div.companyProduct > img {
-        padding-left: 50px;
         float: none;
+        padding-left: 50px;
     }
     div.companyProduct > div {
         padding: 50px;

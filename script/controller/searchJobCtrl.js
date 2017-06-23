@@ -1,9 +1,10 @@
 /**
  * Created by cc on 2017/6/8.
  */
-app.controller("searchJobCtrl",["portService","$scope","$state",'searchOptions','searchUtil','commonUtil',
+app.controller("searchJobCtrl",["portService","$scope","$state",'searchOptions','searchUtil',"commonUtil",
 function (portService,$scope,$state,searchOptions,searchUtil,commonUtil) {
     var vm=this;
+    commonUtil.scrollTo(0, 0);
     vm.params = $state.params;//
     //将从其余页面传来的name展示出来。
     vm.keyWord = vm.params.name;
@@ -14,11 +15,9 @@ function (portService,$scope,$state,searchOptions,searchUtil,commonUtil) {
     if(vm.params.data===null) {
         vm.options=searchOptionsCopy;
         vm.data = searchUtil.dataDelete(vm.options);
-        console.log("常量")
     }
     else {
         vm.options=JSON.parse(vm.params.data);
-        console.log("params")
     }
 
     vm.data = searchUtil.dataConvert(vm.options);//在factory中的js文件已详细说明这一步骤的原理
@@ -33,13 +32,13 @@ function (portService,$scope,$state,searchOptions,searchUtil,commonUtil) {
     vm.checkboxMulti = searchUtil.checkboxMulti;
     //时间标签单选
     vm.radioType = searchUtil.radioType;
-    console.log("vm.data",vm.data);
 
     //搜索功能
     vm.search = function () {
         $state.go($state.current,{
             name:vm.keyWord,
             data:JSON.stringify(vm.options)
+
         },{reload: true});
     };
     //清空功能
@@ -68,19 +67,39 @@ function (portService,$scope,$state,searchOptions,searchUtil,commonUtil) {
     portService.getSearchJob(0,vm.data).then(function successCallback(response) {
         if (response.data.code === 0) {
             vm.jobList = response.data.data;
-            console.log("职位列表",vm.jobList);
             vm.paginationConf.totalItems = response.data.total;
             //判断暂无数据是否出现的条件，当totalItems为0或者未定义时出现
             vm.paginationConf.showFlag = !vm.paginationConf.totalItems;
         }
+        else {
+            bootbox.alert({
+                buttons: {
+                    ok: {
+                        label: '关闭',
+                        className: 'btn-danger'
+                    }
+                },
+                message: '搜索职位：' + response.data.message,
+                title: "提示"
+            });
+        }
     });
-
-
     //获取展示四个最新发布的推荐职位
         portService.getSearchJob(1,"").then(function successCallback(response) {
             if (response.data.code === 0) {
                 vm.noJobRecommendJob = response.data.data.slice(0,4);
-                console.log("获取展示四个最新发布的推荐职位",vm.noJobRecommendJob)
+            }
+            else {
+                bootbox.alert({
+                    buttons: {
+                        ok: {
+                            label: '关闭',
+                            className: 'btn-danger'
+                        }
+                    },
+                    message: '推荐职位：' + response.data.message,
+                    title: "提示"
+                });
             }
         });
 }]);

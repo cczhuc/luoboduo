@@ -1,3 +1,6 @@
+<script>
+    var timeStart = new Date();
+</script>
 <!DOCTYPE html>
 <html lang="en" >
 <head>
@@ -37,5 +40,9 @@
     <script src="http://cdn.bootcss.com/angular.js/1.6.4/angular-animate.min.js"></script>
     <script src="http://cdn.bootcss.com/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>
     <script src="components/ocLazyLoad.min.js"></script>
+    <script>
+        var timeEnd = new Date();
+        console.log('总耗时：' + (timeEnd - timeStart));
+    </script>
 </body>
 </html>

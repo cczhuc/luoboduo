@@ -1,13 +1,25 @@
-app.controller("jobDetailsCtrl",["portService","$scope","$state",
-    function (portService,$scope,$state) {
+app.controller("jobDetailsCtrl",["portService","$scope","$state","commonUtil",
+    function (portService,$scope,$state,commonUtil) {
         var vm = this;
+        commonUtil.scrollTo(0, 0);
         vm.params = $state.params;
-        console.log(vm.params);
         portService.getJobDetails(vm.params.id).then(function successCallBack(response) {
             if (response.data.code===0) {
                 vm.jobDetail = response.data.data;
-                console.log("职位详情",vm.jobDetail);
             }
+            else {
+                bootbox.alert({
+                    buttons: {
+                        ok: {
+                            label: '关闭',
+                            className: 'btn-danger'
+                        }
+                    },
+                    message: '职位详情：' + response.data.message,
+                    title: "提示"
+                });
+            }
+            // 分享功能设置
             var $config = {
                 url: 'http://luoboduo.com/findJob', // 网址，默认使用 window.location.href
                 source: '', // 来源（QQ空间会用到）, 默认读取head标签：<meta name="site" content="http://overtrue" />

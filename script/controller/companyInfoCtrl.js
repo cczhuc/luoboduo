@@ -1,27 +1,24 @@
-app.controller("companyInfoCtrl",["portService","$scope","$state",
-    function (portService,$scope,$state) {
+app.controller("companyInfoCtrl",["portService","$scope","$state","commonUtil",
+    function (portService,$scope,$state,commonUtil) {
         var vm = this;
+        commonUtil.scrollTo(0, 0);
         vm.params = $state.params;
         portService.getCompanyDetails(vm.params.id).then(function successCallBack(response) {
             if(response.data.code===0) {
                 vm.companyInfo = response.data.data;
-                console.log("公司相关信息",vm.companyInfo)
+            }
+            else {
+                bootbox.alert({
+                    buttons: {
+                        ok: {
+                            label: '关闭',
+                            className: 'btn-danger'
+                        }
+                    },
+                    message: '职位详情：' + response.data.message,
+                    title: "提示"
+                });
             }
         });
-        //不同的布尔值,显示默认的选项
-        if (window.location.href.indexOf("hiringJob") >= 0) {
-            vm.jduge = true;
-        }
-        else {
-            vm.jduge = false;
-        }
-
-        //点击添加class
-        vm.exchange0 = function () {
-            vm.jduge=false;
-        };
-        vm.exchange1 =function () {
-            vm.jduge=true;
-        };
     }
 ]);

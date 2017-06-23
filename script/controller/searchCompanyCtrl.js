@@ -1,8 +1,8 @@
 app.controller("searchCompanyCtrl",["portService","$scope","$state",'searchOptions','searchUtil','commonUtil',
     function (portService,$scope,$state,searchOptions,searchUtil,commonUtil) {
         var vm=this;
+        commonUtil.scrollTo(0, 0);
         vm.params = $state.params;//
-        console.log(vm.params);
         //将从其余页面传来的name展示出来。
         vm.companyKeyWords = vm.params.name;
         // 获取搜索模块的基础数据
@@ -10,14 +10,9 @@ app.controller("searchCompanyCtrl",["portService","$scope","$state",'searchOptio
         if(vm.params.data===null) {
             vm.options=searchOptions;
             vm.data = searchUtil.dataDelete(vm.options);
-            console.log("常量");
-            console.log(vm.options);
-
         }
         else {
             vm.options=JSON.parse(vm.params.data);
-            console.log("params");
-            console.log(vm.options);
         }
 
         vm.data = searchUtil.dataConvert(vm.options);//在factory中的js文件已详细说明这一步骤的原理
@@ -33,7 +28,7 @@ app.controller("searchCompanyCtrl",["portService","$scope","$state",'searchOptio
         //搜索功能
         vm.search = function () {
             $state.go($state.current,{
-                name:vm.keyWord,
+                name:vm.companyKeyWords,
                 data:JSON.stringify(vm.options)
             },{reload: true});
         };
@@ -63,17 +58,39 @@ app.controller("searchCompanyCtrl",["portService","$scope","$state",'searchOptio
         portService.getSearchCompany("",vm.data).then(function successCallBack(response){
             if(response.data.code===0) {
                 vm.companyList = response.data.data;
-                console.log("公司列表",vm.companyList);
                 vm.paginationConf.totalItems = response.data.total;
                 //判断暂无数据是否出现的条件，当totalItems为0或者未定义时出现
                 vm.paginationConf.showFlag = !vm.paginationConf.totalItems;
+            }
+            else {
+                bootbox.alert({
+                    buttons: {
+                        ok: {
+                            label: '关闭',
+                            className: 'btn-danger'
+                        }
+                    },
+                    message: '搜索公司：' + response.data.message,
+                    title: "提示"
+                });
             }
         });
         // 无数据时推荐公司
         portService.getSearchCompany("","").then(function successCallBack(response){
             if(response.data.code===0) {
                 vm.recommendedCompany = response.data.data.slice(0,3);
-                console.log("无数据时展示3个推荐公司",vm.recommendedCompany)
+            }
+            else {
+                bootbox.alert({
+                    buttons: {
+                        ok: {
+                            label: '关闭',
+                            className: 'btn-danger'
+                        }
+                    },
+                    message: '推荐公司：' + response.data.message,
+                    title: "提示"
+                });
             }
         })
     }]);

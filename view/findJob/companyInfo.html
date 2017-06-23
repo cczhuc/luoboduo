@@ -1,6 +1,6 @@
 <div class="container">
     <div class="companyInfo">
-        <img ng-src="{{vm.companyInfo.company.logo}}" alt="公司logo" >
+        <img ng-src="{{vm.companyInfo.company.logo}}" alt="" >
         <div>
             <p class="companyInfo-companyName">
                 <span>{{vm.companyInfo.company.name}}</span>
@@ -20,10 +20,10 @@
     <div class="row companyDetail">
         <div class="col-md-8 col-sm-12">
             <div class="companyTitle">
-                <div class="companyTitle-company" ui-sref="myApp.companyInfo.companyDetails" ng-class={"companyActive":!vm.jduge} ng-click="vm.exchange0()">
+                <div class="companyTitle-company" ui-sref="myApp.companyInfo.companyDetails" ng-class={"companyActive":$state.includes('myApp.companyInfo.companyDetails')}>
                     公司详情
                 </div>
-                <div class="companyTitle-hiringJob" ui-sref="myApp.companyInfo.hiringJob" ng-class={"companyActive":vm.jduge} ng-click="vm.exchange1()">
+                <div class="companyTitle-hiringJob" ui-sref="myApp.companyInfo.hiringJob" ng-class={"companyActive":$state.includes('myApp.companyInfo.hiringJob')}>
                     在招职位
                 </div>
             </div>

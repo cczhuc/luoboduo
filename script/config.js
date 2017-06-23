@@ -71,3 +71,5 @@ function lazyLoadConfig($ocLazyLoadProvider) {
         ]
     });
 }
+
+

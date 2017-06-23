@@ -1,12 +1,12 @@
-.home-banner>div{
-    width: 100%;
-    height: 400px;
-}
 
 /*职位推荐*/
 .home-introduce {
     padding: 74px 0;
     background-color: white;
+}
+.home-banner > a,
+.home-banner > ol{
+    display: none;
 }
 .introduce-tag{
     margin-top: 45px;
@@ -52,29 +52,25 @@
 }
 .home-new-job-title{
     text-align: center;
-    /*padding: 70px 0 30px 0;*/
-    color: #536a82;
     font-size: 16px;
+    color: #536a82;
 }
 .home-new-job-title>span{
-    font-size: 20px;
     margin-bottom: 0;
     color: #2d3e50;
+    font-size: 20px;
     font-weight: bold;
 }
 .home-new-job-title>div{
+    margin: 4px auto;
     height: 2px;
     width: 30px;
     background-color: #fc2b47;
-    margin: 4px auto;
 }
 .home-new-job-title>p{
     padding: 0;
 }
 /*最新职位轮播*/
-.home-new-job-carousel{
-
-}
 .home-jobCarousel-item{
     padding: 8%;
     background-color: white;
@@ -84,10 +80,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-bottom: 2px solid #f6f7f8;
     width: 100%;
     height: 180px;
+    border-bottom: 2px solid #f6f7f8;
     cursor: pointer;
+}
+.home-jobCarousel-itemImg:hover{
+    color: #00ccff;
+}
+.home-jobCarousel-itemText{
+    padding: 10px 0;
+    cursor: pointer;
+}
+.home-jobCarousel-itemText:hover{
+    color: red;
 }
 /*轮播图改造*/
 .home-jobCarousel-setting>ol{
@@ -96,16 +102,16 @@
 
 .home-jobCarousel-setting>a{
     width: 0;
-    background-image: none!important;
+    background-image: none;
 }
 
 .home-jobCarousel-setting>a>.glyphicon-chevron-right {
-    margin-right: -60px !important;
+    margin-right: -60px;
     color: red;
     background-color: white;
 }
 .home-jobCarousel-setting>a>.glyphicon-chevron-left{
-    margin-left: -60px !important;
+    margin-left: -60px ;
     color: red;
     background-color: white;
 }
@@ -137,9 +143,9 @@
 /*轮播上一张，下一章样式*/
 .banner-pre, .banner-next {
     position: absolute;
+    display: inline-block;
     top: 47%;
     z-index: 5;
-    display: inline-block;
     margin-top: -10px;
 }
 .home-comment{
@@ -148,22 +154,18 @@
 
 .home-friend {
     text-align: center;
-    color: #999999;
-    background-color: rgb(255, 255, 255);
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    border-radius: 3px;
-    border: 1px solid #F0F0F0;
     padding: 30px 17px 0 17px;
     margin: 2px 0;
     min-height: 338px;
+    border-radius: 3px;
+    border: 1px solid #F0F0F0;
+    color: #999999;
+    background-color: rgb(255, 255, 255);
 }
 .home-friend>img{
     display: inline-block;
 }
 .home-friend:hover {
-    -moz-box-shadow: 1px 0 20px #DAE0E3;
-    -webkit-box-shadow: 1px 0 20px #DAE0E3;
     box-shadow: 1px 0 20px #DAE0E3;
 }
 
@@ -174,10 +176,11 @@
 
 }
 .home-friend-introduce {
+    margin: 10px 0 20px 0;
     color: #666666;
     font-size: 14px;
-    margin: 10px 0 20px 0;
 }
+
 @media screen and (max-width: 768px){
     .friend-carousel-hide{
         display: none;

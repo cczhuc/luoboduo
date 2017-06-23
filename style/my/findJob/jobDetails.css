@@ -139,6 +139,9 @@ div.companyLogo > p {
     color: #000000;
     cursor: pointer;
 }
+div.companyLogo > p img {
+    transform: translateY(-1px);
+}
 div.companyBasicInfo {
     padding: 50px;
     font-size: 14px;
@@ -167,6 +170,7 @@ div.companyBasicInfo > p {
 div.companyBasicInfo > p img {
     padding-right: 10px;
     width: 26px;
+    transform: translateY(-1px);
 }
 @media only screen and (max-width: 400px) {
     div.shareJob > button {

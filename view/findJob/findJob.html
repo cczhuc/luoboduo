@@ -75,15 +75,15 @@
                 <div class="menu-details">
                     <div>
                         <span>视觉设计</span>
-                        <a   ng-repeat="item in vm.thirdType.UI.UI1" ui-sref="myApp.search.searchJob({name:item.name,category:item3.type})">{{item.name}}</a>
+                        <a   ng-repeat="item in vm.thirdType.UI.UI1" ui-sref="myApp.search.searchJob({name:item.name})">{{item.name}}</a>
                     </div>
                     <div>
                         <span>交互设计</span>
-                        <a    ng-repeat="item in vm.thirdType.UI.UI2" ui-sref="myApp.search.searchJob({name:item.name,category:item3.type})">{{item.name}}</a>
+                        <a    ng-repeat="item in vm.thirdType.UI.UI2" ui-sref="myApp.search.searchJob({name:item.name})">{{item.name}}</a>
                     </div>
                     <div>
                         <span>高端职位</span>
-                        <a   ng-repeat="item in vm.thirdType.UI.UI3" ui-sref="myApp.search.searchJob({name:item.name,category:item3.type})">{{item.name}}</a>
+                        <a   ng-repeat="item in vm.thirdType.UI.UI3" ui-sref="myApp.search.searchJob({name:item.name})">{{item.name}}</a>
                     </div>
                 </div>
             </div>
@@ -94,7 +94,7 @@
                 <div class="searchCompany">
                     <span>公司名称</span>
                     <input type="text" placeholder="输入公司名称" ng-model="vm.companyKeyWord">
-                    <button class="btn btn-danger" ui-sref="myApp.search.searchCompany({name:vm.companyKeyWord,judge:false})">搜索</button>
+                    <button class="btn btn-danger" ui-sref="myApp.search.searchCompany({name:vm.companyKeyWord})">搜索</button>
                 </div>
             </form>
             <div uib-carousel  class="bannerimg" active="active" interval="vm.myInterval">
@@ -107,14 +107,14 @@
         </div>
     </div>
     <!--推荐职位/最新职位-->
-    <div class="row recommendJobTtile" >
+    <div class="row recommend-job-title" >
         <div class="col-lg-12">
-            <span ng-class={"uncheck":vm.changeJob} ng-click="vm.exchange0()">推荐职位</span>
-            <span ng-class={"uncheck":!vm.changeJob} ng-click="vm.exchange1()">最新职位</span>
+            <span ng-class={"uncheck":vm.changeJob} ng-click="vm.exchangeRecommend()">推荐职位</span>
+            <span ng-class={"uncheck":!vm.changeJob} ng-click="vm.exchangeNew()">最新职位</span>
             <span class="jobMore" ui-sref="myApp.jobList({judge:vm.changeJob})">查看更多></span>
         </div>
     </div>
-    <div class="row recommendJobList " >
+    <div class="row recommend-job-list " >
         <!--推荐职位-->
         <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 " ng-repeat="recommendJob in vm.findJobRecommendJob track by $index"
         ng-if="!vm.changeJob" ui-sref="myApp.jobDetails({id:recommendJob.id})">

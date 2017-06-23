@@ -2,121 +2,45 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ede3715-3fdf-488b-ba3b-afd86834e395" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/5YVX]LA~8B@2PLNP(H08STL.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/bt.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/companyInfo/companyInfo-approved.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/companyList-banner.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/finJob-recommendCompany-1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/finJob-recommendCompany-2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/finJob-recommendCompany-3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/find-elite-advantage-1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/find-elite-advantage-2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/find-elite-advantage-3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/find-elite-advantage-4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/find-elite-service-1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/find-elite-service-2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/find-elite-service-3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/find-elite-type-1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/find-elite-type-2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/find-elite-type-3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/findJob-01.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/findJob-02.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/findJob-03.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/home-service1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/home-service2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/home-service3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/home-service4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/home-service5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/home-service6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/jianjie-1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/jianjie-2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/jianjie-3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/jobDetails/jobDetails-companyName.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/jobDetails/jobDetails-industry.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/jobDetails/jobDetails-people.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/jobDetails/jobDetails-request-1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/jobDetails/jobDetails-request-2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/jobDetails/jobDetails-request-3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/jobDetails/jobDetails-shareJob-1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/jobDetails/jobDetails-shareJob-2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/jobDetails/jobDetails-updateTime.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kh.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/left.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/maps.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ms.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/notFindItem.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/right.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/searchCompany/searchCompany-01.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/searchCompany/searchCompany-02.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/searchCompany/searchCompany-03.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/tes.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/tx.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/xd.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/components/slick.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nginx.conf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/script/constant/areaConstant.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/script/controller/aboutCtrl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/script/controller/companyDetailsCtrl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/script/controller/companyInfoCtrl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/script/controller/companyListCtrl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/script/controller/findEliteCtrl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/script/controller/hiringJobCtrl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/script/controller/homeCtrl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/script/controller/jobDetailsCtrl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/script/controller/jobListCtrl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/script/controller/mainCtrl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/script/controller/searchCompanyCtrl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/script/controller/searchCtrl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/script/controller/searchJobCtrl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/script/directors/homeFriendCarousel/homeFriendCar.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/script/directors/homeFriendCarousel/homeFriendCar.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/script/directors/homeFriendCarousel/homeFriendCar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/script/directors/tm.pagination/tm.pagination.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/script/directors/tm.pagination/tm.pagination.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/script/factory/fsp-util-0.0.1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/script/filter/constantFilter.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/about.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/companyList.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/findElite.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/home.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/my/findJob/companyDetails.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/my/findJob/companyInfo.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/my/findJob/hiringJob.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/my/findJob/jobDetails.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/my/findJob/jobList.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/my/findJob/search.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/my/findJob/searchCompany.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/my/findJob/searchJob.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/slick.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/main.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/找职2位_03.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/找职位2_03.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/找职位4_03.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/script/config.js" afterPath="$PROJECT_DIR$/script/config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/script/constant/constant.js" afterPath="$PROJECT_DIR$/script/constant/constant.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/script/controller/aboutCtrl.js" afterPath="$PROJECT_DIR$/script/controller/aboutCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/script/controller/companyDetailsCtrl.js" afterPath="$PROJECT_DIR$/script/controller/companyDetailsCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/script/controller/companyInfoCtrl.js" afterPath="$PROJECT_DIR$/script/controller/companyInfoCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/script/controller/companyListCtrl.js" afterPath="$PROJECT_DIR$/script/controller/companyListCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/script/controller/findEliteCtrl.js" afterPath="$PROJECT_DIR$/script/controller/findEliteCtrl.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/script/controller/findJobCtrl.js" afterPath="$PROJECT_DIR$/script/controller/findJobCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/script/controller/hiringJobCtrl.js" afterPath="$PROJECT_DIR$/script/controller/hiringJobCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/script/controller/homeCtrl.js" afterPath="$PROJECT_DIR$/script/controller/homeCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/script/controller/jobDetailsCtrl.js" afterPath="$PROJECT_DIR$/script/controller/jobDetailsCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/script/controller/jobListCtrl.js" afterPath="$PROJECT_DIR$/script/controller/jobListCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/script/controller/mainCtrl.js" afterPath="$PROJECT_DIR$/script/controller/mainCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/script/controller/searchCompanyCtrl.js" afterPath="$PROJECT_DIR$/script/controller/searchCompanyCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/script/controller/searchCtrl.js" afterPath="$PROJECT_DIR$/script/controller/searchCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/script/controller/searchJobCtrl.js" afterPath="$PROJECT_DIR$/script/controller/searchJobCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/script/factory/fsp-util-0.0.1.js" afterPath="$PROJECT_DIR$/script/factory/fsp-util-0.0.1.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/script/router.js" afterPath="$PROJECT_DIR$/script/router.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/script/service/portAddress.js" afterPath="$PROJECT_DIR$/script/service/portAddress.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/script/service/portMethod.js" afterPath="$PROJECT_DIR$/script/service/portMethod.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/about.css" afterPath="$PROJECT_DIR$/style/about.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/findElite.css" afterPath="$PROJECT_DIR$/style/findElite.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/home.css" afterPath="$PROJECT_DIR$/style/home.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/main.css" afterPath="$PROJECT_DIR$/style/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/my/findJob/companyDetails.css" afterPath="$PROJECT_DIR$/style/my/findJob/companyDetails.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/my/findJob/companyInfo.css" afterPath="$PROJECT_DIR$/style/my/findJob/companyInfo.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/my/findJob/findJob.css" afterPath="$PROJECT_DIR$/style/my/findJob/findJob.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/my/findJob/hiringJob.css" afterPath="$PROJECT_DIR$/style/my/findJob/hiringJob.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/my/findJob/jobDetails.css" afterPath="$PROJECT_DIR$/style/my/findJob/jobDetails.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/my/findJob/jobList.css" afterPath="$PROJECT_DIR$/style/my/findJob/jobList.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/my/findJob/searchCompany.css" afterPath="$PROJECT_DIR$/style/my/findJob/searchCompany.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/my/findJob/searchJob.css" afterPath="$PROJECT_DIR$/style/my/findJob/searchJob.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/public.css" afterPath="$PROJECT_DIR$/style/public.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/about.html" afterPath="$PROJECT_DIR$/view/about.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/findElite/companyList.html" afterPath="$PROJECT_DIR$/view/findElite/companyList.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/findElite/findElite.html" afterPath="$PROJECT_DIR$/view/findElite/findElite.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/findJob/companyDetails.html" afterPath="$PROJECT_DIR$/view/findJob/companyDetails.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/findJob/companyInfo.html" afterPath="$PROJECT_DIR$/view/findJob/companyInfo.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/findJob/findJob.html" afterPath="$PROJECT_DIR$/view/findJob/findJob.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/findJob/hiringJob.html" afterPath="$PROJECT_DIR$/view/findJob/hiringJob.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/findJob/jobDetails.html" afterPath="$PROJECT_DIR$/view/findJob/jobDetails.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/findJob/jobList.html" afterPath="$PROJECT_DIR$/view/findJob/jobList.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/findJob/search.html" afterPath="$PROJECT_DIR$/view/findJob/search.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/findJob/searchCompany.html" afterPath="$PROJECT_DIR$/view/findJob/searchCompany.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/findJob/searchJob.html" afterPath="$PROJECT_DIR$/view/findJob/searchJob.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/home.html" afterPath="$PROJECT_DIR$/view/home.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/script/directors/tm.pagination.js" afterPath="$PROJECT_DIR$/script/directors/tm.pagination/tm.pagination.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/main.html" afterPath="$PROJECT_DIR$/view/main.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -136,7 +60,43 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="3880">
               <caret line="194" column="0" lean-forward="false" selection-start-line="194" selection-start-column="0" selection-end-line="199" selection-end-column="18" />
-              <folding />
+              <folding>
+                <marker date="1498146000802" expanded="true" signature="5751:6749" ph="..." />
+                <marker date="1498146000802" expanded="true" signature="5900:6266" ph="..." />
+                <marker date="1498146000802" expanded="true" signature="5997:6251" ph="..." />
+                <marker date="1498146000802" expanded="true" signature="6402:6738" ph="..." />
+                <marker date="1498146000802" expanded="true" signature="6493:6723" ph="..." />
+                <marker date="1498146000802" expanded="true" signature="6809:7001" ph="..." />
+                <marker date="1498146000802" expanded="true" signature="6842:6990" ph="..." />
+                <marker date="1498146000802" expanded="true" signature="7045:8682" ph="..." />
+                <marker date="1498146000802" expanded="true" signature="7093:8127" ph="..." />
+                <marker date="1498146000802" expanded="true" signature="7190:8001" ph="..." />
+                <marker date="1498146000802" expanded="true" signature="7333:7538" ph="..." />
+                <marker date="1498146000802" expanded="true" signature="7561:7761" ph="..." />
+                <marker date="1498146000802" expanded="true" signature="7784:7982" ph="..." />
+                <marker date="1498146000802" expanded="true" signature="8017:8112" ph="..." />
+                <marker date="1498146000802" expanded="true" signature="8169:8671" ph="..." />
+                <marker date="1498146000802" expanded="true" signature="8199:8656" ph="..." />
+                <marker date="1498146000802" expanded="true" signature="8325:8637" ph="..." />
+                <marker date="1498146000802" expanded="true" signature="8446:8614" ph="..." />
+                <marker date="1498146000802" expanded="true" signature="8474:8587" ph="..." />
+                <marker date="1498146000802" expanded="true" signature="8799:9783" ph="..." />
+                <marker date="1498146000802" expanded="true" signature="8935:9772" ph="..." />
+                <marker date="1498146000802" expanded="true" signature="9066:9509" ph="..." />
+                <marker date="1498146000802" expanded="true" signature="9088:9196" ph="..." />
+                <marker date="1498146000802" expanded="true" signature="9330:9490" ph="..." />
+                <marker date="1498146000802" expanded="true" signature="9545:9757" ph="..." />
+                <marker date="1498146000802" expanded="true" signature="9659:9738" ph="..." />
+                <marker date="1498146000802" expanded="true" signature="9838:10196" ph="..." />
+                <marker date="1498146000802" expanded="true" signature="9904:9997" ph="..." />
+                <marker date="1498146000802" expanded="true" signature="10048:10185" ph="..." />
+                <marker date="1498146000802" expanded="true" signature="10238:10754" ph="..." />
+                <marker date="1498146000802" expanded="true" signature="10305:10599" ph="..." />
+                <marker date="1498146000802" expanded="true" signature="10350:10584" ph="..." />
+                <marker date="1498146000802" expanded="true" signature="10650:10743" ph="..." />
+                <marker date="1498146000802" expanded="true" signature="10788:10912" ph="..." />
+                <marker date="1498146000802" expanded="true" signature="10820:10901" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -145,47 +105,8 @@
         <entry file="file://$PROJECT_DIR$/style/my/findJob/findJob.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="8120">
-              <caret line="407" column="19" lean-forward="false" selection-start-line="407" selection-start-column="19" selection-end-line="407" selection-end-column="19" />
-              <folding>
-                <marker date="1498015330816" expanded="true" signature="6103:6105" ph="{...}" />
-                <marker date="1498015330816" expanded="true" signature="6850:6877" ph="{...}" />
-                <marker date="1498015330816" expanded="true" signature="6911:6999" ph="{...}" />
-                <marker date="1498015330816" expanded="true" signature="7040:7153" ph="{...}" />
-                <marker date="1498015330816" expanded="true" signature="7172:7194" ph="{...}" />
-                <marker date="1498015330816" expanded="true" signature="7231:7293" ph="{...}" />
-                <marker date="1498015330816" expanded="true" signature="7339:7496" ph="{...}" />
-                <marker date="1498015330816" expanded="true" signature="7522:7680" ph="{...}" />
-                <marker date="1498015330816" expanded="true" signature="7719:7786" ph="{...}" />
-                <marker date="1498015330816" expanded="true" signature="7825:7869" ph="{...}" />
-                <marker date="1498015330816" expanded="true" signature="7913:7994" ph="{...}" />
-                <marker date="1498015330816" expanded="true" signature="8023:8061" ph="{...}" />
-                <marker date="1498015330816" expanded="true" signature="8102:8288" ph="{...}" />
-                <marker date="1498015330816" expanded="true" signature="8304:8377" ph="{...}" />
-                <marker date="1498015330816" expanded="true" signature="8474:8525" ph="{...}" />
-                <marker date="1498015330816" expanded="true" signature="8554:8598" ph="{...}" />
-                <marker date="1498015330816" expanded="true" signature="8729:9486" ph="{...}" />
-                <marker date="1498015330816" expanded="true" signature="8857:8961" ph="{...}" />
-                <marker date="1498015330816" expanded="true" signature="9087:9193" ph="{...}" />
-                <marker date="1498015330816" expanded="true" signature="9386:9484" ph="{...}" />
-                <marker date="1498015330816" expanded="true" signature="9520:9548" ph="{...}" />
-                <marker date="1498015330816" expanded="true" signature="9579:9622" ph="{...}" />
-                <marker date="1498015330816" expanded="true" signature="9658:9702" ph="{...}" />
-                <marker date="1498015330816" expanded="true" signature="9753:9820" ph="{...}" />
-                <marker date="1498015330816" expanded="true" signature="9874:10536" ph="{...}" />
-                <marker date="1498015330816" expanded="true" signature="9897:9927" ph="{...}" />
-                <marker date="1498015330816" expanded="true" signature="9946:10023" ph="{...}" />
-                <marker date="1498015330816" expanded="true" signature="10073:10103" ph="{...}" />
-                <marker date="1498015330816" expanded="true" signature="10156:10241" ph="{...}" />
-                <marker date="1498015330816" expanded="true" signature="10258:10533" ph="{...}" />
-                <marker date="1498015330816" expanded="true" signature="10579:10935" ph="{...}" />
-                <marker date="1498015330816" expanded="true" signature="10602:10632" ph="{...}" />
-                <marker date="1498015330816" expanded="true" signature="10651:10727" ph="{...}" />
-                <marker date="1498015330816" expanded="true" signature="10763:10813" ph="{...}" />
-                <marker date="1498015330816" expanded="true" signature="10848:10933" ph="{...}" />
-                <marker date="1498015330816" expanded="true" signature="10978:11309" ph="{...}" />
-                <marker date="1498015330816" expanded="true" signature="11007:11133" ph="{...}" />
-                <marker date="1498015330816" expanded="true" signature="11162:11194" ph="{...}" />
-              </folding>
+              <caret line="406" column="19" lean-forward="false" selection-start-line="406" selection-start-column="19" selection-end-line="406" selection-end-column="19" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -193,8 +114,8 @@
       <file leaf-file-name="findJobCtrl.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/script/controller/findJobCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="100" column="34" lean-forward="false" selection-start-line="100" selection-start-column="34" selection-end-line="100" selection-end-column="39" />
+            <state relative-caret-position="1279">
+              <caret line="152" column="34" lean-forward="false" selection-start-line="152" selection-start-column="34" selection-end-line="152" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -213,7 +134,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <push-targets>
-      <push-target-info target-remote="origin" target-branch="dev" repo="$PROJECT_DIR$" source="master" />
+      <push-target-info target-remote="origin" target-branch="master" repo="$PROJECT_DIR$" source="master" />
     </push-targets>
   </component>
   <component name="IdeDocumentHistory">
@@ -243,10 +164,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="100" />
-    <option name="y" value="58" />
-    <option name="width" value="1064" />
-    <option name="height" value="652" />
+    <option name="x" value="38" />
+    <option name="y" value="23" />
+    <option name="width" value="1198" />
+    <option name="height" value="702" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -263,7 +184,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -279,6 +199,7 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -402,7 +323,8 @@
       <workItem from="1497950253441" duration="786000" />
       <workItem from="1497951343957" duration="13000" />
       <workItem from="1497951867732" duration="24458000" />
-      <workItem from="1498032502728" duration="51000" />
+      <workItem from="1498032502728" duration="718000" />
+      <workItem from="1498184533342" duration="54000" />
     </task>
     <task id="LOCAL-00001" summary="首页更新了一点东西">
       <created>1496307562088</created>
@@ -418,24 +340,31 @@
       <option name="project" value="LOCAL" />
       <updated>1496498733219</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="基本完成">
+      <created>1498032627912</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1498032627912</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86391000" />
+    <option name="totallyTimeSpent" value="87112000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="100" y="58" width="1064" height="652" extended-state="0" />
+    <frame x="38" y="23" width="1198" height="702" extended-state="0" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23489279" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23448277" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4299611" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24928091" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="SVN Repositories" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.015564202" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -477,7 +406,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="首页更新了一点东西" />
     <MESSAGE value="导航栏与页脚静态页面" />
-    <option name="LAST_COMMIT_MESSAGE" value="导航栏与页脚静态页面" />
+    <MESSAGE value="基本完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="基本完成" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -497,7 +427,43 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="500">
           <caret line="25" column="35" lean-forward="true" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
-          <folding />
+          <folding>
+            <marker date="1498146000802" expanded="true" signature="5751:6749" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="5900:6266" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="5997:6251" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="6402:6738" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="6493:6723" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="6809:7001" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="6842:6990" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="7045:8682" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="7093:8127" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="7190:8001" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="7333:7538" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="7561:7761" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="7784:7982" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="8017:8112" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="8169:8671" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="8199:8656" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="8325:8637" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="8446:8614" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="8474:8587" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="8799:9783" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="8935:9772" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="9066:9509" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="9088:9196" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="9330:9490" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="9545:9757" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="9659:9738" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="9838:10196" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="9904:9997" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="10048:10185" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="10238:10754" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="10305:10599" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="10350:10584" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="10650:10743" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="10788:10912" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="10820:10901" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -520,7 +486,43 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1498146000802" expanded="true" signature="5751:6749" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="5900:6266" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="5997:6251" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="6402:6738" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="6493:6723" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="6809:7001" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="6842:6990" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="7045:8682" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="7093:8127" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="7190:8001" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="7333:7538" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="7561:7761" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="7784:7982" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="8017:8112" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="8169:8671" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="8199:8656" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="8325:8637" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="8446:8614" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="8474:8587" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="8799:9783" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="8935:9772" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="9066:9509" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="9088:9196" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="9330:9490" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="9545:9757" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="9659:9738" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="9838:10196" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="9904:9997" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="10048:10185" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="10238:10754" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="10305:10599" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="10350:10584" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="10650:10743" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="10788:10912" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="10820:10901" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -550,7 +552,43 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1498146000802" expanded="true" signature="5751:6749" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="5900:6266" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="5997:6251" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="6402:6738" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="6493:6723" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="6809:7001" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="6842:6990" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="7045:8682" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="7093:8127" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="7190:8001" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="7333:7538" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="7561:7761" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="7784:7982" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="8017:8112" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="8169:8671" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="8199:8656" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="8325:8637" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="8446:8614" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="8474:8587" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="8799:9783" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="8935:9772" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="9066:9509" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="9088:9196" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="9330:9490" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="9545:9757" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="9659:9738" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="9838:10196" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="9904:9997" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="10048:10185" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="10238:10754" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="10305:10599" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="10350:10584" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="10650:10743" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="10788:10912" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="10820:10901" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -580,7 +618,43 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1498146000802" expanded="true" signature="5751:6749" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="5900:6266" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="5997:6251" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="6402:6738" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="6493:6723" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="6809:7001" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="6842:6990" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="7045:8682" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="7093:8127" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="7190:8001" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="7333:7538" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="7561:7761" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="7784:7982" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="8017:8112" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="8169:8671" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="8199:8656" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="8325:8637" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="8446:8614" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="8474:8587" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="8799:9783" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="8935:9772" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="9066:9509" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="9088:9196" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="9330:9490" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="9545:9757" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="9659:9738" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="9838:10196" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="9904:9997" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="10048:10185" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="10238:10754" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="10305:10599" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="10350:10584" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="10650:10743" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="10788:10912" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="10820:10901" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -818,47 +892,8 @@
     <entry file="file://$PROJECT_DIR$/style/my/findJob/findJob.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="8120">
-          <caret line="407" column="19" lean-forward="false" selection-start-line="407" selection-start-column="19" selection-end-line="407" selection-end-column="19" />
-          <folding>
-            <marker date="1498015330816" expanded="true" signature="6103:6105" ph="{...}" />
-            <marker date="1498015330816" expanded="true" signature="6850:6877" ph="{...}" />
-            <marker date="1498015330816" expanded="true" signature="6911:6999" ph="{...}" />
-            <marker date="1498015330816" expanded="true" signature="7040:7153" ph="{...}" />
-            <marker date="1498015330816" expanded="true" signature="7172:7194" ph="{...}" />
-            <marker date="1498015330816" expanded="true" signature="7231:7293" ph="{...}" />
-            <marker date="1498015330816" expanded="true" signature="7339:7496" ph="{...}" />
-            <marker date="1498015330816" expanded="true" signature="7522:7680" ph="{...}" />
-            <marker date="1498015330816" expanded="true" signature="7719:7786" ph="{...}" />
-            <marker date="1498015330816" expanded="true" signature="7825:7869" ph="{...}" />
-            <marker date="1498015330816" expanded="true" signature="7913:7994" ph="{...}" />
-            <marker date="1498015330816" expanded="true" signature="8023:8061" ph="{...}" />
-            <marker date="1498015330816" expanded="true" signature="8102:8288" ph="{...}" />
-            <marker date="1498015330816" expanded="true" signature="8304:8377" ph="{...}" />
-            <marker date="1498015330816" expanded="true" signature="8474:8525" ph="{...}" />
-            <marker date="1498015330816" expanded="true" signature="8554:8598" ph="{...}" />
-            <marker date="1498015330816" expanded="true" signature="8729:9486" ph="{...}" />
-            <marker date="1498015330816" expanded="true" signature="8857:8961" ph="{...}" />
-            <marker date="1498015330816" expanded="true" signature="9087:9193" ph="{...}" />
-            <marker date="1498015330816" expanded="true" signature="9386:9484" ph="{...}" />
-            <marker date="1498015330816" expanded="true" signature="9520:9548" ph="{...}" />
-            <marker date="1498015330816" expanded="true" signature="9579:9622" ph="{...}" />
-            <marker date="1498015330816" expanded="true" signature="9658:9702" ph="{...}" />
-            <marker date="1498015330816" expanded="true" signature="9753:9820" ph="{...}" />
-            <marker date="1498015330816" expanded="true" signature="9874:10536" ph="{...}" />
-            <marker date="1498015330816" expanded="true" signature="9897:9927" ph="{...}" />
-            <marker date="1498015330816" expanded="true" signature="9946:10023" ph="{...}" />
-            <marker date="1498015330816" expanded="true" signature="10073:10103" ph="{...}" />
-            <marker date="1498015330816" expanded="true" signature="10156:10241" ph="{...}" />
-            <marker date="1498015330816" expanded="true" signature="10258:10533" ph="{...}" />
-            <marker date="1498015330816" expanded="true" signature="10579:10935" ph="{...}" />
-            <marker date="1498015330816" expanded="true" signature="10602:10632" ph="{...}" />
-            <marker date="1498015330816" expanded="true" signature="10651:10727" ph="{...}" />
-            <marker date="1498015330816" expanded="true" signature="10763:10813" ph="{...}" />
-            <marker date="1498015330816" expanded="true" signature="10848:10933" ph="{...}" />
-            <marker date="1498015330816" expanded="true" signature="10978:11309" ph="{...}" />
-            <marker date="1498015330816" expanded="true" signature="11007:11133" ph="{...}" />
-            <marker date="1498015330816" expanded="true" signature="11162:11194" ph="{...}" />
-          </folding>
+          <caret line="406" column="19" lean-forward="false" selection-start-line="406" selection-start-column="19" selection-end-line="406" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -866,14 +901,50 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3880">
           <caret line="194" column="0" lean-forward="false" selection-start-line="194" selection-start-column="0" selection-end-line="199" selection-end-column="18" />
-          <folding />
+          <folding>
+            <marker date="1498146000802" expanded="true" signature="5751:6749" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="5900:6266" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="5997:6251" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="6402:6738" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="6493:6723" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="6809:7001" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="6842:6990" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="7045:8682" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="7093:8127" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="7190:8001" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="7333:7538" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="7561:7761" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="7784:7982" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="8017:8112" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="8169:8671" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="8199:8656" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="8325:8637" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="8446:8614" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="8474:8587" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="8799:9783" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="8935:9772" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="9066:9509" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="9088:9196" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="9330:9490" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="9545:9757" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="9659:9738" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="9838:10196" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="9904:9997" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="10048:10185" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="10238:10754" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="10305:10599" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="10350:10584" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="10650:10743" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="10788:10912" ph="..." />
+            <marker date="1498146000802" expanded="true" signature="10820:10901" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/script/controller/findJobCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="100" column="34" lean-forward="false" selection-start-line="100" selection-start-column="34" selection-end-line="100" selection-end-column="39" />
+        <state relative-caret-position="1279">
+          <caret line="152" column="34" lean-forward="false" selection-start-line="152" selection-start-column="34" selection-end-line="152" selection-end-column="34" />
           <folding />
         </state>
       </provider>
